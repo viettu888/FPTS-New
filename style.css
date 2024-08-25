@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #deecf5;
+    color: #333;
+    padding-top: 20px;
+    scroll-behavior: smooth;
+}
+header 
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid  #f5f7f8;
+    background-color: #f5f5f5;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.2s ease-in all;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0);
+    z-index: 9999;
+
+
+}
+
+
+body {
+    
+    position: relative;
+    height: 100%;
+    background: #f5f5f5;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+swiper-container {
+    width: 85%;
+    height: 100%;
+
+}
+
+.mySwiper {
+    overflow: initial;
+   
+}
+.swiper-horizontal
+{
+ background: red;
+ height: 500px;
+  
+}
+.big-img {
+    text-align: center;
+    font-size: 18px;
+    background: #f5f5f5;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.big-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+swiper-container::part(button-next) {
+    display: none;
+}
+
+swiper-container::part(button-prev) {
+    display: none;
+
+}
+
+swiper-container::part(pagination) 
+{
+    
+    text-align: center; 
+    transform: translate3d(0px, 0px, 0px);
+    z-index: 10;
+
+}
+.horizontalClass
+{
+    background: rebeccapurple;
+}
+.btn-next {
+    position: absolute;
+    top: 35%;
+    right: 10px;
+    font-size: 5px;
+}
+.btn-prev {
+    position: absolute;
+    top: 35%;
+    left: 10px;
+}
+.slide-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    width: 1100px;
+    margin: auto;
+    margin-top:40px;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    height: 15px;
+    margin-left: 160px;
+}
+
+
+.logo img {
+    height: 30px;
+}
+
+.content{
+    margin: auto;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    margin-right: 305px;
+    
+}
+
+.menu li {
+    margin-right: 20px;
+    cursor: pointer;
+    
+}
+.menu li > a
+{
+    color: #555;
+    margin-right: 20px;
+}
+.search-container{
+    margin-bottom: 5%;
+    margin-left: 55px;
+}
+.search-container h1  {
+    font-size: 35px;
+    color: #454848;
+    max-width: 600px;
+    font-style: italic;
+    padding-top: 60px;
+    line-height: 1.5;
+}
+.search-container span
+{
+    font-style: italic;
+    color: #187cad;
+}
+
+.search-container p {
+    font-size: 18px;
+    color: #666;
+    
+}
+.ch 
+{
+   margin-top: 12px;
+}
+.content-omega
+{
+    text-align: center;
+    margin-top: 63px;
+}
+.omega-top
+{
+    font-size: 11px;
+    color: #4f4f4f;
+}
+.omega-bottom
+{
+    padding: 20px;
+}
+
+.omega-bottom li 
+{
+    text-align: center;
+    display: inline;
+}
+.omega-z
+{
+    padding: 4px 8px;
+    font-size: 11px;
+    color: #007DB8;
+}
+.search-box
+{
+        position: relative;
+        width: 1100px;
+        margin-left: 55px;
+        
+}
+
+ 
+.search-box::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 30px;
+    background: #bae9ff;
+    z-index: 1;
+    top: 9px;
+    left: 55px;
+    display: flex;
+}
+.search-box input {
+    width: 90% !important;
+    outline: 1px solid #ffffff;
+    outline-offset: 6px;
+    border-width: 0px;
+    color: #555;
+    padding: 20px 82px;
+    border-radius: 40px;
+    border: 5px solid transparent;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position: 12px 7px;
+    background-image: url(./loupe-search-home.png);
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 0.02rem;
+    font-style: normal;
+    font-family: var(--font-family-light);
+    height: 40px;
+}
+
+.search-box > button {
+    font-size: 13px;
+    font-weight: normal;
+    font-family: var(--font-family-all);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    height: 40px;
+    outline: 0;
+    padding: 0;
+    pointer-events: auto;
+    position: absolute;
+    right: 120px;
+    top: 5px;
+    width: 90px;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+
+}
+.swiper-pagination
+{
+    text-align: center;
+    transition: opacity 0.3s;
+    transform: translate3d(0px, 0px, 0px);
+
+}
+swiper-container
+{
+    width: 85%;
+    height: 100%;
+}
+/*------------------*/
+
+.products-info 
+{
+    border: 2px solid #c1deeb ;
+    max-height: 200px; 
+    overflow-y: scroll !important; 
+    padding-right: 5px;
+    position: absolute; 
+    z-index: 1000; 
+    width: 90%;
+    border-bottom-left-radius: 20px ;
+    border-bottom-right-radius: 20px ;
+    background: #fff;
+    border-top: 1px dashed #c1deeb;
+    margin-top: 2px;
+}
+::-webkit-scrollbar 
+{
+    width: 5px; 
+   
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 4px; 
+}
+.products-info::-webkit-scrollbar-thumb:hover {
+    background: #82a4ec; 
+  }
+.product
+{
+    display: flex;
+    padding: 5px 5px;
+    width: 100%;
+    
+}
+.product:hover
+{
+    background: #eaf2f8;
+}
+
+.product > img
+{
+    width: 25px;
+    height: 25px;
+    border-radius: 19px;
+    display: flex;
+    border: 1px solid #deecf5;
+    margin-left: 10px;
+}
+
+.infomation
+{
+    font-size: 10px;
+    padding: 3px 20px;
+   
+}
+.astock_CODE
+{ 
+   font-size: 12px;
+   display: flex
+   
+}
+.name
+{
+    
+    color: #666;
+}
+
+.floor
+{
+    border: 1px solid rebeccapurple;
+    border-radius: 25px;
+    font-size: 6px;
+    padding: 3px;
+    margin-left: 5px;
+   
+}
+
+.product > a
+{
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    width: 100%;
+}
+.highlight {
+    
+    color: rgb(102, 175, 243); /* Màu chữ đỏ */
+    font-weight: bold;
+}

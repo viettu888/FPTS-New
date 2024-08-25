@@ -1,0 +1,374 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FPT Securities</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="counsel.css"/>
+    <link rel="stylesheet" href="main.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-plugin-name"></script>
+    <link rel="shortcut icon" type="image/png" href="./Image/logo_doc.png"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module">
+      import swiper from "https://cdn.jsdelivr.net/npm/swiper@11.1.9/+esm";
+    </script>
+    <link rel="shortcut icon" type="image/png" href="./Project- FE/Image/logo_doc.png"/>
+    <style>
+      html
+      {
+        scroll-behavior: smooth;
+      }
+    </style>
+   
+  </head>
+  <body>
+    <script src="./myscripts.js"></script>
+    <style>
+      html
+      {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <header>
+      <div class="container flex-center">
+        <div class="logo"> <a href="">
+          
+          <img src="./Project- FE/Image/logo_ngang.png" alt="FPT Securities" /></a>
+        </div>
+        <div class="menu">
+          <ul>
+            <li> <a  style="text-decoration: none;" href="#trangchu">Trang chủ</a></li>
+            <li> <a  style="text-decoration: none;" href="">Thông tin công bố</a></li>
+            <li> <a  style="text-decoration: none;" href="#tuvan">Tư vấn</a></li>
+            <li> <a  style="text-decoration: none;" href="#lienhe">Liên hệ</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </header>
+  
+    <!------------------------>
+
+    <swiper-container class="mySwiper" 
+    pagination="true" pagination-clickable="true" 
+    direction="vertical"
+    space-between="30" mousewheel="true">
+    <swiper-slide id="trangchu" >  
+        <!--index-->
+      
+      <div class="container content">
+        <div class="search-container">
+          <h1>Ez<span>IR</span></h1>
+          <p>THÔNG TIN DOANH NGHIỆP</p>
+          <p class="ch">
+            
+            CƠ HỘI ĐẦU TƯ
+          </p>
+        </div>
+        <form class="search-form "   >
+          <div class="search-box"  >
+              
+              <input type="search" id="search-item"   oninput='handleInput()' onchange='productsearch()'/>
+              <button type="button" id="serach-button"  >Tìm kiếm</button>
+              <div id="products" class="products-info "style="display: none" >
+                   
+              </div>
+              <div id="results-container"></div>
+              </div>
+            </form>
+          </div>
+       
+      
+      <div class="content-omega">
+               <div class="omega-top"><p>EzIR có thể tìm kiếm theo các tiêu chí:</p>
+              </div>
+                 <ul class="omega-bottom">
+                  <li class="omega-z">Mã chứng khoán</li>
+                  <li class="omega-z">Tên doanh nghiệp</li>
+                  <li class="omega-z">Trực tiếp chọn doanh nghiệp bên dưới</li>
+                 </ul>
+      </div>
+      <div class="container">
+        <swiper-container
+        id="swiperz"
+          class="mySwiper"
+          pagination="true"
+          pagination-clickable="true"
+          navigation="true"
+          loop="true"
+          auto-height="true"
+        >
+   <swiper-slide>
+            <div class="big-img">
+              <div class="slide-item"><img src="./Project- FE/Image/485846_5654311_1031686_image.jpg"alt=""/></div>
+              <div class="slide-item"><img src="./Project- FE/Image/485846_5654311_1031686_image.jpg"alt=""/></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+            </div>
+            <div style="width: 100%; height: 50px;" ></div>        
+          </swiper-slide>
+          <swiper-slide>
+            <div class="big-img">
+              <div class="slide-item"><img src="./Project- FE/Image/485846_5654311_1031686_image.jpg"alt=""/></div>
+              <div class="slide-item"><img src="./Project- FE/Image/485846_5654311_1031686_image.jpg"alt=""/></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+            </div>
+            <div style="width: 100%; height: 50px;" ></div>        
+          </swiper-slide>
+          <swiper-slide>
+            <div class="big-img">
+              <div class="slide-item"><img src="./Project- FE/Image/485846_5654311_1031686_image.jpg"alt=""/></div>
+              <div class="slide-item"><img src="./Project- FE/Image/485846_5654311_1031686_image.jpg"alt=""/></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./Project- FE/Image/OIP (1).jfif"></div>
+            </div>
+            <div style="width: 100%; height: 50px;" ></div>        
+          </swiper-slide>
+  
+         
+  
+          </swiper-container>
+  
+        <button class="btn-prev">
+          <div
+            part="button-prev"
+            class="swiper-button-prev"
+            tabindex="0"
+            role="button"
+            aria-label="Previous slide"
+            aria-controls="swiper-wrapper-b20e6478102fa29ff"
+          >
+          </div>
+          
+        </button>
+  
+        <button class="btn-next">
+          <div
+            part="button-next"
+            class="swiper-button-next"
+            tabindex="0"
+            role="button"
+            aria-label="Next slide"
+            aria-controls="swiper-wrapper-a5a487f47f6532e1"
+          >
+            
+          
+          </div>
+        </button>
+      </div>
+    </div>
+
+
+    </swiper-slide><!--index-->
+
+
+    <swiper-slide id="tuvan"  > <!--Tu van-->
+      <main >
+        <h2>Tư Vấn Quản Trị Doanh Nghiệp</h2>
+     <div class="containerx">
+        <div class="Ezir-container">
+         <ul>
+            <p>Ez<span>IR</span></p>
+            <li>Tư vấn Công bố thông tin và giải pháp EzIR</li>
+         </ul>
+         <button><a href="" >Xem chi tiết</a></button>
+    
+        </div>
+        <div class="EzGsm-container"> 
+            <ul>
+                <p>Ez<span>GSM</span></p>
+                <li>Tư vấn tổ chức ĐHĐCĐ và giải pháp EzGSM</li>
+             </ul>
+             <button><a href="" >Xem chi tiết</a></button>
+        </div>
+        <div class="Ir-container">
+            <ul>
+                <p>Quan hê đầu tư (IR) </p>
+                <li>Tư vấn Quan hệ Nhà đầu tư</li>
+             </ul>
+             <button><a><a href="" >Xem chi tiết</a></a></button>
+        </div>
+     </div>
+     <div class="container-bot">
+        <div class="report-container">
+            <ul>
+                <p>Báo Cáo Doanh Nghiệp </p>
+                <li>Tư vấn Lập Báo cáo thường niên</li>
+             <button><a href="" >Xem chi tiết</a></button>
+             <li>
+                   Tư vấn Lập Báo cáo phát triển bền vững
+             </li>
+             <button ><a href="" >Xem chi tiết</a></button>
+        </div>
+        <div class="Charter-container">
+            <ul>
+                <p>Điều lệ - Quy chế </p>
+                <li>Tư vấn xây dựng, sửa đổi Điều lệ Quy chế, 
+                    quản trị Công ty, Quy chế hoạt động của Hội 
+                    đồng quản trị, Ban kiểm soát</li>
+             </ul>
+             <button><a href="" >Xem chi tiết</a> </button>
+        </div>
+    </div>
+    </main>
+    </div>
+  </swiper-slide> <!--tu van-->
+
+    <swiper-slide id="lienhe"> <!--lien he-->
+      <div class="main-container"   style="scroll-behavior: smooth;">
+        <h3 class="text-1">Miễn Trừ Trách Nhiệm</h3>
+        <ul class="content-z">
+          <li>
+              <p>Chào mừng Quý khách hàng đến với Giải pháp EzIR - Quan hệ Nhà đầu tư trực tuyến phát triển bởi Công ty cổ phần chứng khoán FPT (FPTS). Bằng việc truy cập vào trang website này, Quý khách hàng nhận thức đầy đủ và đồng ý tuân thủ các quy định sau đây của FPTS. Các quy định này có thể được FPTS thay đổi mà không cần thông báo trước.</p>
+          </li>
+          <li>
+              <p>Các thông tin trình bày trên EzIR bao gồm từ ngữ, hình ảnh, số liệu, đường dẫn hoặc các thông tin khác được công bố bởi chính các Doanh nghiệp đối tác và tổng hợp từ các nguồn đáng tin cậy. Tuy nhiên, FPTS không đảm bảo tính chính xác, đầy đủ của các thông tin và tài liệu này cho các mục đích khác nhau của Quý khách hàng. FPTS không chịu trách nhiệm đối với các lỗi và thiếu sót về thông tin nếu có. Các ý kiến trình bày trên EzIR chỉ liên quan đến các thông tin tại thời điểm hiển thị các thông tin này.</p>
+          </li>
+          <li>
+              <p>FPTS sẽ không chịu trách nhiệm đối với bất kỳ nghĩa vụ nào, bao gồm các thiệt hại, mất mát, hoặc phí tổn trực tiếp hay gián tiếp, ngẫu nhiên hay có hệ thống phát sinh cho Quý khách hàng từ việc sử dụng hoặc không thể sử dụng các thông tin trên EzIR, có liên quan đến các sự cố lỗi, thiếu sót, ngừng/trì hoãn hoạt động truyền dữ liệu, virus, lỗi hệ thống (kể cả trong các trường hợp FPTS đã được thông báo về khả năng xảy ra các sự cố đó).</p>
+          </li>
+          <li>
+              <p>Mọi thông tin và tài liệu được trình bày trên EzIR không được phép sao chép, phát tán dưới mọi hình thức mà không có sự chấp thuận trước bằng văn bản của FPTS.</p>
+          </li>
+        </ul>
+      
+      <div class="line">
+      </div>
+      <footer>
+        <div class="container-foot">
+            <div class="column">
+                <h2>KHỐI TƯ VẤN TÀI CHÍNH DOANH NGHIỆP</h2>
+                <div class="contact-info">
+                    <img src="./Project- FE/Image/địa chỉ-1.jfif"  alt="Location Icon">
+                    <span>Trụ sở Hà Nội</span>
+                </div>
+                <div class="contact-info">
+                    <img src="./Project- FE/Image/phone.jfif" alt="Phone Icon">
+                    <span>19006446 (4504/4502)</span>
+                </div>
+                <div class="contact-info">
+                    <img src="./Project- FE/Image/email-1.jfif" alt="Email Icon">
+                    <span><a href="mailto:ezir@fots.com.vn">ezir@fpts.com.vn</a></span>
+                </div>
+            </div>
+            <div class="column">
+                <h2>PHÒNG TƯ VẤN TÀI CHÍNH DOANH NGHIỆP</h2>
+                <div class="contact-info">
+                    <img src="./Project- FE/Image/địa chỉ-1.jfif" alt="Location Icon">
+                    <span>Chi nhánh TP. Hồ Chí Minh</span>
+                </div>
+                <div class="contact-info">
+                    <img src="./Project- FE/Image/phone.jfif" alt="Phone Icon">
+                    <span>19006446 (8602/7591)</span>
+                </div>
+                <div class="contact-info">
+                    <img src="./Project- FE/Image/email-1.jfif" alt="Email Icon">
+                    <span><a href="mailto:ezir_hcm@fots.com.vn">ezir_hcm@fpts.com.vn</a></span>
+                </div>
+            </div>
+        </div>
+    
+      </footer>
+
+    </div>
+  </swiper-slide>
+   
+  </swiper-container>
+
+    <!----------------------->
+
+
+    <script>
+      const swiperEl1 = document.querySelector("#swiperz");
+      const buttonElPrev = document.querySelector(".btn-prev");
+      const buttonElNext = document.querySelector(".btn-next");
+     
+      buttonElNext.addEventListener("click", () => {
+        swiperEl1.swiper.slideNext();
+      });
+
+      buttonElPrev.addEventListener("click", () => {
+        swiperEl1.swiper.slidePrev();
+      });
+      const container= querySelector(".swiper-autoheight")
+      console.log(container)
+      container.classlist.add("hehe")
+    </script>
+ 
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  </body>
+ 
+</html>
