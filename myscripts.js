@@ -57,10 +57,10 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.getElementById('search-item').addEventListener('focus', function() {
-    document.getElementById('products').style.height = '800px'; // Tăng chiều cao lên 200px khi focus vào input
+    document.getElementById('products').style.height = '800px'; 
 });
 
 document.getElementById('search-item').addEventListener('blur', function() {
-    document.getElementById('products').style.height = '50px'; // Trở lại chiều cao ban đầu khi rời khỏi input
+    document.getElementById('products').style.height = '50px'; 
 });
 

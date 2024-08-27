@@ -19,7 +19,7 @@ header
     justify-content: space-between;
     padding: 20px;
     
-    background:linear-gradient(to bottom, rgb(245 247 248), rgb(195 194 194 / 5%), rgb(255 255 255 / 10%), rgb(206 0 184 / 3%), rgb(245 247 248)), linear-gradient(to right, rgb(161 112 174 / 6%), rgb(126 190 202 / 10%), rgb(126 190 202 / 10%), transparent, rgb(46 215 230 / 10%));
+    background:#f5f7f8;
     position: fixed;
     width: 100%;
     top: 0;
@@ -266,6 +266,7 @@ swiper-container::part(pagination)
     font-style: normal;
     font-family: var(--font-family-light);
     height: 40px;
+   
 }
 .search-box input:focus {
     border-radius: 25px 25px 0 0; 
@@ -275,6 +276,7 @@ swiper-container::part(pagination)
     border-left: 2px solid #c1deeb;
     border-right: 2px solid #c1deeb;
     height: 45px;
+    transition: all 0.5s ease;
 }
 .search-box > button {
     font-size: 13px;
