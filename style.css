@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -9,37 +10,41 @@ body {
     background-color: #deecf5;
     color: #333;
     padding-top: 20px;
-    scroll-behavior: smooth;
+  
 }
+
 header 
 {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    border-bottom: 1px solid  #f5f7f8;
-    background-color: #f5f5f5;
+    
+    background:linear-gradient(to bottom, rgb(245 247 248), rgb(195 194 194 / 5%), rgb(255 255 255 / 10%), rgb(206 0 184 / 3%), rgb(245 247 248)), linear-gradient(to right, rgb(161 112 174 / 6%), rgb(126 190 202 / 10%), rgb(126 190 202 / 10%), transparent, rgb(46 215 230 / 10%));
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     transition: 0.2s ease-in all;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0);
     z-index: 9999;
-
-
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+   
 }
-
 
 body {
     
     position: relative;
     height: 100%;
-    background: #f5f5f5;
+    background: linear-gradient(to bottom, rgb(245 247 248), rgb(195 194 194 / 5%), rgb(255 255 255 / 10%), rgb(206 0 184 / 3%), rgb(245 247 248)), linear-gradient(to right, rgb(161 112 174 / 6%), rgb(126 190 202 / 10%), rgb(126 190 202 / 10%), transparent, rgb(46 215 230 / 10%)) ;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #000;
     margin: 0;
     padding: 0;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
 swiper-container {
@@ -61,18 +66,21 @@ swiper-container {
 .big-img {
     text-align: center;
     font-size: 18px;
-    background: #f5f5f5;
+    background: linear-gradient(to bottom, rgb(245 247 248), rgb(195 194 194 / 5%), rgb(255 255 255 / 10%), rgb(206 0 184 / 3%), rgb(245 247 248)), linear-gradient(to right, rgb(161 112 174 / 6%), rgb(126 190 202 / 10%), rgb(126 190 202 / 10%), transparent, rgb(46 215 230 / 10%)) ;
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     grid-template-rows: repeat(2, minmax(0, 1fr));
     gap: 24px;
+    
+    background-size: cover;
+    
 }
 
 .big-img img {
     display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
 }
 
@@ -149,6 +157,9 @@ swiper-container::part(pagination)
     list-style: none;
     text-align: center;
     margin-right: 305px;
+    flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
     
 }
 
@@ -248,7 +259,7 @@ swiper-container::part(pagination)
     background-repeat: no-repeat;
     background-size: 25px 25px;
     background-position: 12px 7px;
-    background-image: url(./loupe-search-home.png);
+    background-image: url(./img/loupe-search-home.png);
     font-weight: 400;
     font-size: 22px;
     letter-spacing: 0.02rem;
@@ -256,7 +267,15 @@ swiper-container::part(pagination)
     font-family: var(--font-family-light);
     height: 40px;
 }
-
+.search-box input:focus {
+    border-radius: 25px 25px 0 0; 
+    border-bottom: none; 
+    outline: none;
+    border-top: 2px solid #c1deeb ;
+    border-left: 2px solid #c1deeb;
+    border-right: 2px solid #c1deeb;
+    height: 45px;
+}
 .search-box > button {
     font-size: 13px;
     font-weight: normal;
@@ -264,14 +283,14 @@ swiper-container::part(pagination)
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    height: 40px;
+    height: 35px;
     outline: 0;
     padding: 0;
     pointer-events: auto;
     position: absolute;
     right: 120px;
-    top: 5px;
-    width: 90px;
+    top: 7px;
+    width: 80px;
     color: #fff;
     background-color: #337ab7;
     border-color: #2e6da4;
@@ -305,6 +324,7 @@ swiper-container
     background: #fff;
     border-top: 1px dashed #c1deeb;
     margin-top: 2px;
+    display: none;
 }
 ::-webkit-scrollbar 
 {
@@ -380,4 +400,6 @@ swiper-container
     
     color: rgb(102, 175, 243); /* Màu chữ đỏ */
     font-weight: bold;
+
 }
+

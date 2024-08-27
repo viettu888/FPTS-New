@@ -1,0 +1,452 @@
+
+@media (min-width: 1024px) {
+    .containerx, .container-bot {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .Ezir-container, .EzGsm-container, .Ir-container, .report-container, .Charter-container {
+        width: 30%; 
+        margin-bottom: 20px;
+    }
+
+    .Ezir-container button, .EzGsm-container button, .Ir-container button,
+    .report-container button, .Charter-container button {
+        transform: translate(0%, 0%); 
+    }
+}
+
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .containerx, .container-bot {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Ezir-container, .EzGsm-container, .Ir-container, .report-container, .Charter-container {
+        width: 80%; 
+        margin-bottom: 20px;
+    }
+
+    .Ezir-container button, .EzGsm-container button, .Ir-container button,
+    .report-container button, .Charter-container button {
+        transform: translate(0%, 0%); /* Điều chỉnh vị trí nút khi màn hình trung bình */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .containerx, .container-bot {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Ezir-container, .EzGsm-container, .Ir-container, .report-container, .Charter-container {
+        width: 90%; 
+        margin-bottom: 15px;
+    }
+
+    .Ezir-container button, .EzGsm-container button, .Ir-container button,
+    .report-container button, .Charter-container button {
+        transform: translate(0%, 0%); 
+    }
+
+    main {
+        padding: 20px; 
+    }
+}
+
+main {
+    font-family: Arial, sans-serif;
+    background-color: #f9fafb;
+    color: #333;
+}
+html,
+    main {
+      position: relative;
+      height: 100%;
+    }
+
+main {
+      
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+}
+main
+{
+    width: 100%;
+    padding: 80px;
+    background:url(./ggg.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+main h2
+{
+    align-items: center;
+    text-align: center;
+    color: #187cad;
+    padding-bottom: 50px;
+    
+}
+.containerx
+{
+        width: 100%;
+        display: flex;
+}
+    
+
+
+.Ezir-container
+{
+    border: 1px solid #fff;
+    border-radius: 25px;
+    width: 280px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 150px; 
+    margin-left: 0px;
+    
+}
+.Ezir-container ul
+{
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.Ezir-container p
+{
+    font-size: 15px;
+    font-weight: bold;
+    color: #454848;
+    line-height: 2.5;
+    font-style: italic;
+    
+    
+   
+}
+.Ezir-container span
+{
+    font-style: italic;
+    color: #187cad;
+}
+.Ezir-container li
+{
+    list-style: none;
+    font-size: 11px;
+    color: #666;
+}
+.Ezir-container button
+{
+    margin: 0 auto;
+    position: relative;
+    transform: translate(70%, 130%);
+    border: 1px solid #fff;
+    width: 100px;
+    height: 25px;
+    background: rgb(30, 144, 238);
+    border-radius: 20px;
+}
+.Ezir-container button a
+{
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+}
+.EzGsm-container p
+{
+    font-size: 15px;
+    font-weight: bold;
+    color: #454848;
+    line-height: 2.5;
+    font-style: italic;
+    text-align: left;
+}
+.EzGsm-container span
+{
+    font-style: italic;
+    color: #187cad;
+}
+.EzGsm-container
+{
+    border: 1px solid #fff;
+    border-radius: 25px;
+    width: 275px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 160px; 
+    margin-left: 100px;
+}
+.EzGsm-container ul
+{
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.EzGsm-container li{
+    text-align: left;
+    list-style: none;
+    font-size: 11px;
+    color: #666;
+}
+.EzGsm-container button
+{
+    margin: 0 auto;
+    position: relative;
+    transform: translate(70%, 140%);
+    border: 1px solid #fff;
+    width: 100px;
+    height: 25px;
+    background: rgb(30, 144, 238);
+    border-radius: 20px;
+}
+.EzGsm-container button a
+{
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+}
+.Ir-container
+{
+    border: 1px solid #fff;
+    border-radius: 25px;
+    width: 270px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 160px; 
+    margin-left: 100px;
+}
+.Ir-container p
+{
+    color: #187cad;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 2.5;
+    text-align: left;
+}
+.Ir-container li
+{
+    list-style: none;
+    font-size: 11px;
+    text-align: left;
+    color: #666;
+}
+.Ir-container ul
+{
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.Ir-container button
+{
+    margin: 0 auto;
+    position: relative;
+    transform: translate(70%, 140%);
+    border: 1px solid #fff;
+    width: 100px;
+    height: 25px;
+    background: rgb(30, 144, 238);
+    border-radius: 20px;
+    
+}
+.Ir-container button a
+{
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.container-bot
+{
+    display: flex;
+   margin-top: 40px;
+   justify-content: space-evenly;
+    
+}
+.report-container
+{
+    border: 1px solid #fff;
+    border-radius: 25px;
+    width: 270px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 160px; 
+    
+}
+.report-container p
+{
+    color: #187cad;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 2.5;
+    text-align: left;
+}
+.report-container li
+{
+    font-size: 11px;
+    line-height: 2;
+    margin-left: 15px;
+    text-align: left;
+    color: #666;
+}
+.report-container ul
+{
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.report-container button
+{
+    margin:0 auto ;
+    position: relative;
+    transform: translate(60%, 1%);
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid #fff;
+    width: 100px;
+    height: 25px;
+    background: rgb(30, 144, 238);
+    border-radius: 20px;
+} 
+.report-container button a
+{
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+}
+.Charter-container
+{
+    border: 1px solid #fff;
+    border-radius: 25px;
+    width: 270px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 160px; 
+   
+}
+.Charter-container p
+{
+    color: #187cad;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 2.5;
+    text-align: left;
+}
+.Charter-container ul
+{
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.Charter-container li 
+{
+    list-style: none;
+    line-height: 1.5;
+    font-size: 12px;
+    text-align: left;
+    color: #666;
+}
+.Charter-container button
+{
+    margin: 0 auto;
+    position: relative;
+    transform: translate(70%, 35%);
+    border: 1px solid #fff;
+    width: 100px;
+    height: 25px;
+    background: rgb(30, 144, 238);
+    border-radius: 20px;
+ 
+}
+.Charter-container a{
+    text-decoration: none;
+    color: #fff;
+
+}
+.containerx div
+{
+    position: relative;
+    overflow: hidden; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.containerx div:hover
+{
+    height: 175px;
+}
+.details-button
+{   
+    transform: translate(70%, 0%);
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.8s ease;
+}
+.card:hover 
+{
+    transform: translateY(-20px);
+    border: 1px solid blueviolet;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover .details-button {
+    opacity: 1;
+    transform: translate(0%, 0%);
+}
+
+
+.containerx div::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    height: 0;
+    background-color: #187cad;
+    transition: height 0.3s ease, left 0.3s ease;
+    transform: translateY(120%);
+}
+.containerx button {
+    position: absolute;
+    bottom: 10px;
+    left: 30%;
+    transform: translateY(120%);
+    background-color: #1e90ee;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+   
+}
+.container-bot div
+{
+    position: relative;
+    overflow: hidden; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.report-container:hover
+{
+   height: 165px;
+}
+.container-bot:hover button
+{
+   left: 60px;
+  transform: translatey(55px);
+}
+.Charter-container:hover button
+{
+    left: 75px;
+    bottom: -10px;
+    
+}
+.card:hover .line-animation
+{
+    content: "";
+    position: absolute;
+    width: 50rem;
+    height: 31rem;
+    top: -2rem;
+    left: 50px;
+    z-index: -1;
+    transition: 1.5s;
+   background-image: url(./img/TuVanBack_edit_2.png);
+}
+
+
+
