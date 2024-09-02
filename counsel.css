@@ -1,62 +1,46 @@
-
-@media (min-width: 1024px) {
+@media screen and (max-width: 1200px) {
     .containerx, .container-bot {
-        display: flex;
-        justify-content: space-between;
+        transform: translateY(-45px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        margin-top: 70px;
         padding: 20px;
     }
-
-    .Ezir-container, .EzGsm-container, .Ir-container, .report-container, .Charter-container {
-        width: 30%; 
-        margin-bottom: 20px;
+    .container-bot
+    {
+       transform: translateY(-55px);
     }
-
-    .Ezir-container button, .EzGsm-container button, .Ir-container button,
-    .report-container button, .Charter-container button {
-        transform: translate(0%, 0%); 
-    }
-}
-
-
-@media (max-width: 1024px) and (min-width: 768px) {
     .containerx, .container-bot {
         flex-direction: column;
         align-items: center;
+       
     }
-
     .Ezir-container, .EzGsm-container, .Ir-container, .report-container, .Charter-container {
-        width: 80%; 
-        margin-bottom: 20px;
-    }
-
-    .Ezir-container button, .EzGsm-container button, .Ir-container button,
-    .report-container button, .Charter-container button {
-        transform: translate(0%, 0%); /* Điều chỉnh vị trí nút khi màn hình trung bình */
+        width: 80%;
+        max-width: none;
+        margin: 10px;
     }
 }
 
-
-@media (max-width: 768px) {
-    .containerx, .container-bot {
-        flex-direction: column;
-        align-items: center;
+@media screen and (max-width: 480px) {
+    main {
+        margin-top: 50px;
     }
-
+    .containerx, .container-bot {
+        padding: 0;
+    }
     .Ezir-container, .EzGsm-container, .Ir-container, .report-container, .Charter-container {
-        width: 90%; 
+        width: 90%;
         margin-bottom: 15px;
     }
-
-    .Ezir-container button, .EzGsm-container button, .Ir-container button,
-    .report-container button, .Charter-container button {
-        transform: translate(0%, 0%); 
-    }
-
-    main {
-        padding: 20px; 
+    .containerx button, .container-bot button {
+        width: 80px;
+        font-size: 10px;
     }
 }
-
 main {
     font-family: Arial, sans-serif;
     background-color: #f9fafb;
@@ -64,7 +48,7 @@ main {
 }
 html,
     main {
-      position: relative;
+    
       height: 100%;
     }
 
@@ -79,11 +63,13 @@ main {
 main
 {
     width: 100%;
-    padding: 80px;
+    margin-top: 85px;
     background:url(./ggg.jpg);
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
+    overflow: hidden;
+    overflow-y: scroll;
 }
 main h2
 {
@@ -97,18 +83,17 @@ main h2
 {
         width: 100%;
         display: flex;
+        margin-top: 30px;
+        justify-content: space-evenly;
 }
-    
-
-
 .Ezir-container
 {
     border: 1px solid #fff;
     border-radius: 25px;
-    width: 280px;
+    width: 250px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: 150px; 
-    margin-left: 0px;
+    height: 130px; 
+    
     
 }
 .Ezir-container ul
@@ -138,17 +123,7 @@ main h2
     font-size: 11px;
     color: #666;
 }
-.Ezir-container button
-{
-    margin: 0 auto;
-    position: relative;
-    transform: translate(70%, 130%);
-    border: 1px solid #fff;
-    width: 100px;
-    height: 25px;
-    background: rgb(30, 144, 238);
-    border-radius: 20px;
-}
+
 .Ezir-container button a
 {
     font-size: 12px;
@@ -173,10 +148,10 @@ main h2
 {
     border: 1px solid #fff;
     border-radius: 25px;
-    width: 275px;
+    width: 250px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: 160px; 
-    margin-left: 100px;
+    height: 130px; 
+    
 }
 .EzGsm-container ul
 {
@@ -189,17 +164,7 @@ main h2
     font-size: 11px;
     color: #666;
 }
-.EzGsm-container button
-{
-    margin: 0 auto;
-    position: relative;
-    transform: translate(70%, 140%);
-    border: 1px solid #fff;
-    width: 100px;
-    height: 25px;
-    background: rgb(30, 144, 238);
-    border-radius: 20px;
-}
+
 .EzGsm-container button a
 {
     font-size: 12px;
@@ -210,10 +175,10 @@ main h2
 {
     border: 1px solid #fff;
     border-radius: 25px;
-    width: 270px;
+    width: 250px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: 160px; 
-    margin-left: 100px;
+    height: 130px; 
+    
 }
 .Ir-container p
 {
@@ -235,18 +200,7 @@ main h2
     margin-left: 15px;
     margin-top: 15px;
 }
-.Ir-container button
-{
-    margin: 0 auto;
-    position: relative;
-    transform: translate(70%, 140%);
-    border: 1px solid #fff;
-    width: 100px;
-    height: 25px;
-    background: rgb(30, 144, 238);
-    border-radius: 20px;
-    
-}
+
 .Ir-container button a
 {
     font-size: 12px;
@@ -257,17 +211,17 @@ main h2
 .container-bot
 {
     display: flex;
-   margin-top: 40px;
    justify-content: space-evenly;
+   padding: 50px;
     
 }
 .report-container
 {
     border: 1px solid #fff;
     border-radius: 25px;
-    width: 270px;
+    width: 250px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: 160px; 
+    height: 130px; 
     
 }
 .report-container p
@@ -281,7 +235,7 @@ main h2
 .report-container li
 {
     font-size: 11px;
-    line-height: 2;
+    line-height: 1;
     margin-left: 15px;
     text-align: left;
     color: #666;
@@ -314,7 +268,7 @@ main h2
 {
     border: 1px solid #fff;
     border-radius: 25px;
-    width: 270px;
+    width: 250px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     height: 160px; 
    
@@ -322,7 +276,7 @@ main h2
 .Charter-container p
 {
     color: #187cad;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
     line-height: 2.5;
     text-align: left;
@@ -357,49 +311,40 @@ main h2
     color: #fff;
 
 }
-.containerx div
-{
+.containerx div, .container-bot div {
     position: relative;
-    overflow: hidden; 
+     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.containerx div:hover
-{
-    height: 175px;
 }
 .details-button
 {   
     transform: translate(70%, 0%);
     opacity: 0;
-    transition: opacity 0.5s ease, transform 0.8s ease;
+    transition: transform 0.9s ease;
 }
-.card:hover 
-{
-    transform: translateY(-20px);
+.card:hover {
+    transform: scaleY(1.2); 
     border: 1px solid blueviolet;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-
-.card:hover .details-button {
+.card:hover .details-button, .card:hover .line-animation {
+    transform: none;
     opacity: 1;
-    transform: translate(0%, 0%);
+}
+.containerx:hover button
+{
+    bottom: 10px;
+    border: 1px solid #fff;
+    width: 95px;
+    height: 25px;
+    background: rgb(30, 144, 238);
+    border-radius: 30px;
+    align-items: center;
 }
 
-
-.containerx div::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 2px;
-    height: 0;
-    background-color: #187cad;
-    transition: height 0.3s ease, left 0.3s ease;
-    transform: translateY(120%);
-}
 .containerx button {
     position: absolute;
-    bottom: 10px;
+    bottom: 15px;
     left: 30%;
     transform: translateY(120%);
     background-color: #1e90ee;
@@ -411,42 +356,85 @@ main h2
     cursor: pointer;
     text-align: center;
     text-decoration: none;
+    
    
 }
-.container-bot div
-{
-    position: relative;
-    overflow: hidden; 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
 .report-container:hover
 {
-   height: 165px;
+    height: 165px;
+}
+.report-container:hover .li1
+{
+   margin-top: 15px;
+   transition: 0.9s ease;
 }
 .container-bot:hover button
 {
    left: 60px;
-  transform: translatey(55px);
+  transform: translatey(10px);
+  top: 10px;
 }
 .Charter-container:hover button
 {
     left: 75px;
-    bottom: -10px;
+    top:15px;
     
 }
 .card:hover .line-animation
 {
     content: "";
     position: absolute;
-    width: 50rem;
-    height: 31rem;
-    top: -2rem;
-    left: 50px;
+    width: 40rem;
+    height: 300rem;
+    top: -5rem;
+    left: 30px;
     z-index: -1;
     transition: 1.5s;
    background-image: url(./img/TuVanBack_edit_2.png);
+   transform: translateX(20px);
 }
 
+.report-container:hover .line-animation
+{
+    content: "";
+    position: absolute;
+    width: 20rem;
+    height: 14rem;
+    top: -3rem;
+    left: 15px;
+    z-index: -1;
+    transition: 1.5s;
+    background-image: url(./img/TuVanBack_edit_2.png);
+    transform: translateX(20px);
+}
+.Charter-container:hover .line-animation
+{
+    content: "";
+    position: absolute;
+    width: 20rem;
+    height: 14rem;
+    top: -3rem;
+    left: 15px;
+    z-index: -1;
+    transition: 1.5s;
+    background-image: url(./img/TuVanBack_edit_2.png);
+    transform: translateX(20px);
+}
+.Charter-container:hover li
+{
+    font-size: 11px;
+}
+.container-bot:hover button
+{
+    bottom: 10px;
+    border: 1px solid #fff;
+    width: 95px;
+    height: 25px;
+    background: rgb(30, 144, 238);
+    border-radius: 30px;
+    align-items: center;
+    transform: translateY(50px);
+}
+/*-------------------------------------------*/
 
-
+ 

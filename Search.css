@@ -16,15 +16,14 @@ header
     z-index: 9999;
     font-size: 18px;
     padding: 3px;
+    overflow: hidden;
    
 }
 body {
     font-family: Arial, sans-serif;
     background-color: #f9fafb;
     color: #333;
-    margin-left: 150px;
-    margin-right: 150px;
-    
+    padding: 0px 150px;
     
 }
 
@@ -68,7 +67,7 @@ body {
 }
 .search-container p
 {
-    margin-top: 5px;
+    margin-top: 20px;
     margin-left: 5px;
     font-size: 15px;
     
@@ -624,7 +623,6 @@ margin-left: 20px;
     margin-left: -150px;
     margin-right: -150px;
     background: #FFFFFF;
-    
     justify-content: space-between;
 }
 .footer-top h4
@@ -637,6 +635,7 @@ margin-left: 20px;
 {
     font-size: 12px;
     line-height: 1.5;
+    
 }
 .footer-left
 {

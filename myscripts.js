@@ -64,3 +64,4 @@ document.getElementById('search-item').addEventListener('blur', function() {
     document.getElementById('products').style.height = '50px'; 
 });
 
+/*-------------------*/

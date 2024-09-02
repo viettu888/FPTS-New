@@ -12,6 +12,7 @@
    </link>
     <link rel="stylesheet" href="counsel.css"/>
     <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="view.css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -26,8 +27,13 @@
     <script type="module">
       import swiper from "https://cdn.jsdelivr.net/npm/swiper@11.1.9/+esm";
     </script>
-    <link rel="shortcut icon" type="image/png" href="./Project- FE/Image/logo_doc.png"/>
+    <link rel="shortcut icon" type="image/png" href="./img/logo_doc.png"/>
+
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+   <style>
+
       html
       {
         scroll-behavior: smooth;
@@ -37,6 +43,8 @@
   </head>
   <body>
     <script src="./myscripts.js"></script>
+    <script src="./app.js"></script>
+    <script src="./app2.js"></script>
     <style>
       html
       {
@@ -44,7 +52,7 @@
       }
     </style>
     <header>
-      <div class="container flex-center">
+      <div class=" flex-center">
         <div class="logo"> <a href="">
           
           <img src="./img/logo_ngang.png" alt="FPT Securities" /></a>
@@ -63,7 +71,7 @@
   
     <!------------------------>
 
-    <swiper-container class="mySwiper" 
+  <swiper-container class="mySwiper" 
     pagination="true" pagination-clickable="true" 
     direction="vertical"
     space-between="30" mousewheel="true">
@@ -253,23 +261,25 @@
             <p>Ez<span>IR</span></p>
             <li>Tư vấn Công bố thông tin và giải pháp EzIR</li>
          </ul>
-         <button class="details-button"><a href="" >Xem chi tiết</a></button>
+         <button class="details-button btnEZ"><a href="" >Xem chi tiết</a></button>
          <div class="line-animation"></div>
+        
         </div>
+        
         <div class="EzGsm-container card"> 
             <ul>
                 <p>Ez<span>GSM</span></p>
                 <li>Tư vấn tổ chức ĐHĐCĐ và giải pháp EzGSM</li>
              </ul>
-             <button class="details-button"><a href="" >Xem chi tiết</a></button>
-             <div class="line-animation"></div>
+             <button class="details-button btnEG"><a href="" >Xem chi tiết</a></button>
+              <div class="line-animation"></div>
             </div>
         <div class="Ir-container card">
             <ul>
                 <p>Quan hê đầu tư (IR) </p>
                 <li>Tư vấn Quan hệ Nhà đầu tư</li>
              </ul>
-             <button class="details-button"><a><a href="" >Xem chi tiết</a></a></button>
+             <button class="details-button btnIr" ><a><a href="" >Xem chi tiết</a></a></button>
              <div class="line-animation"></div>
             </div>
      </div>
@@ -279,12 +289,12 @@
             <ul>
                 <p>Báo Cáo Doanh Nghiệp </p>
                 <li>Tư vấn Lập Báo cáo thường niên</li>
-             <button class="details-button"><a href="" >Xem chi tiết</a></button>
-             <li>
+             <button class="details-button btnBCTN"><a href="" >Xem chi tiết</a></button>
+             <li class="li1">
                    Tư vấn Lập Báo cáo phát triển bền vững
              </li>
-             <button class="details-button" ><a href="" >Xem chi tiết</a></button>
-             <div class="line-animation"></div>
+             <button class="details-button btnPTBV" ><a href="" >Xem chi tiết</a></button>
+              <div class="line-animation"></div>
             </div>
         <div class="Charter-container card">
             <ul>
@@ -293,12 +303,12 @@
                     quản trị Công ty, Quy chế hoạt động của Hội 
                     đồng quản trị, Ban kiểm soát</li>
              </ul>
-             <button class="details-button"><a href="" >Xem chi tiết</a> </button>
-             <div class="line-animation"></div>
+             <button class="details-button btnDLQC"><a href="" >Xem chi tiết</a> </button>
+              <div class="line-animation"></div>
             </div>
     </div>
     </main>
-    </div>
+    
   </swiper-slide> <!--tu van-->
 
     <swiper-slide id="lienhe"> <!--lien he-->
@@ -363,7 +373,433 @@
   </swiper-slide>
    
   </swiper-container>
+  <!--EZ-->
+  <div  class="moder-view hidez upview  ">
+    <div class="moder-inner">
+      <div class="moder-header">
+       <p class="head-model">Tư vấn Công bố thông tin và giải pháp EzIR
+      </p> <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="moder-body">
+         <h4> 1. Lợi ích khi sử dụng dịch vụ tư vấn </h4>
+         <ul>
+             <li class="text-1">- Đảm bảo tuân thủ đúng quy định pháp luật về công bố thông tin: Chuyên viên FPTS trực tiếp tư vấn xây dựng Quy chế công bố thông tin cho doanh nghiệp, nhắc nhở công bố thông tin định kỳ, tư vấn trong tình huống phát sinh nghĩa vụ công bố thông tin bất thường, cập nhật cho doanh nghiệp các quy định mới nhất về công bố thông tin trên thị trường chứng khoán.</li>
+             <li class="text-1">- Tiết kiệm thời gian, chi phí, nhân lực trong công tác công bố thông tin: Khách hàng được giải đáp nhanh chóng, hỗ trợ biểu mẫu; cung cấp công cụ để chủ động công bố thông tin trên website qua đó để kịp thời xử lý các tình huống công bố thông tin.</li>
+             <li class="text-1">- Gia tăng cơ hội quảng bá thương hiệu thông qua trang EzIR – Thông tin doanh nghiệp, cơ hội đầu tư:</li>
+             <li class="text-1">&emsp;+ Thông tin do doanh nghiệp đăng tải được công bố rộng rãi đến cộng đồng nhà đầu tư (hơn 200.000 nhà đầu tư mở tài khoản và giao dịch tại FPTS) với cấu trúc trang tin khoa học, khối lượng thông tin không hạn chế, bao gồm đầy đủ các báo cáo, thông tin tài chính – phi tài chính, thông tin cổ phiếu cập nhật chính xác – kịp thời;</li>
+             <li class="text-1">&emsp;+ Logo doanh nghiệp được quảng bá trên trang chủ của FPTS fpts.com.vn với hơn 90.000 lượt truy cập/ngày.</li>
+            
+         </ul>
+        <h4>2. Dịch vụ cung cấp</h4>
+        <ul>
+             <li class="text-1">- Tư vấn Công bố thông tin;</li>
+             <li class="text-1">- Cung cấp công cụ để Khách hàng thực hiện công bố thông tin trên trang EzIR – Thông tin doanh nghiệp, Cơ hội đầu tư và cho phép Khách hàng liên kết mục Quan hệ cổ đông trên website của Khách hàng với trang thông tin này.</li>
+             <li class="text-1">- Hỗ trợ Khách hàng thực hiện công bố thông tin song ngữ Anh – Việt để đảm bảo truyền tải thông tin nhanh chóng và kịp thời cho cổ đông và nhà đầu tư nước ngoài.</li>
+             <li class="text-1">Chi tiết về giải pháp EzIR - Quan hệ nhà đầu tư trực tuyến vui lòng xem <a href="https://ezir.fpts.com.vn/upload/EzIR.pdf" style="color:#187cad ;">tại đây</a></li>
+            
+        </ul>
+      </div>
+      <div class="moder-footer">
+          <button class="moder-close">Đóng</button>
+      </div>
+  </div>
+    <div class="line-model-view">
+  </div>
+  
+    <div class="container-model">
+        <div class="column-model1">
+            <h2>KHỐI TƯ VẤN TÀI CHÍNH DOANH NGHIỆP</h2>
+            <div class="contact-model">
+              <div id="img-model"><i class="fa-solid fa-location-dot"></i></div>
+                <span>Trụ sở Hà Nội</span>
+            </div>
+            <div class="contact-model">
+              <div id="img-model"><i class="fa-solid fa-phone"></i></div>
+                <span>19006446 (4504/4502)</span>
+            </div>
+            <div class="contact-model">
+               <div id="img-model"><i class="fa-regular fa-envelope"></i></div>
+                <span><a  href="mailto:ezir@fots.com.vn">ezir@fpts.com.vn</a></span>
+            </div>
+        </div>
+        <div class="column-model2">
+            <h2>PHÒNG TƯ VẤN TÀI CHÍNH DOANH NGHIỆP</h2>
+            <div class="contact-model">
+              <div id="img-model"><i class="fa-solid fa-location-dot"></i></div>
+                <span>Chi nhánh TP. Hồ Chí Minh</span>
+            </div>
+            <div class="contact-model">
+                <div id="img-model"><i class="fa-solid fa-phone"></i></div>
+                <span>19006446 (8602/7591)</span>
+            </div>
+            <div class="contact-model">
+               <div id="img-model"><i class="fa-regular fa-envelope"></i></div>
+                <span ><a href="mailto:ezir_hcm@fots.com.vn">ezir_hcm@fpts.com.vn</a></span>
+            </div>
+        </div>
+    </div>
+  </div>
+<!--EG-->
+<div class="moder-viewno2 hideno2 upview">
+  <div class="moder-innerno2">
+    <div class="moder-headerno2">
+     <h3 class="head-model">Tư vấn Tổ chức ĐHĐCĐ và giải pháp EzGSM
+     </h3> <i class="fa-solid fa-xmark"></i>
+    </div>
+    <div class="moder-body">
+       <h4> 1. Lợi ích khi sử dụng Dịch vụ tư vấn tổ chức Đại hội đồng Cổ đông của FPT </h4>
+       <ul> <p class="text-top">a. Đối với Doanh nghiệp (Tổ chức phát hành)</p>
+           <li class="text-1">- Được tư vấn tổ chức và hỗ trợ xuyên suốt quá trình tổ chức Đại hội đồng Cổ đông (ĐHĐCĐ) bởi đội ngũ chuyên viên tư vấn am hiểu sâu sắc về quy định pháp luật và quản trị công ty, đảm bảo thực hiện đúng và đầy đủ các thủ tục tổ chức ĐHĐCĐ theo quy định của Luật doanh nghiệp.</li>
+           <li class="text-1">- Kiểm soát được số lượng cổ đông tham dự và ủy quyền tham dự Đại hội, cũng như tỷ lệ thay đổi trong quá trình diễn ra Đại hội theo thời gian thực, giúp gia tăng tỷ lệ cổ đông tham dự Đại hội và tăng khả năng tổ chức Đại hội thành công.</li>
+           <li class="text-1">- Tiết kiệm tối đa chi phí và nhân lực trong quá trình tổ chức Đại hội ngay từ khâu đăng ký đại biểu đến kiểm phiếu, cho kết quả nhanh chóng, chính xác;</li>
+           <li class="text-1">- “Giảm gánh lo” trong việc chuẩn bị cơ sở, vật chất tổ chức ĐHĐCĐ.;</li>
+       </ul>
+        <ul>
+          <p class="text-top">b. Đối với Cổ đông</p>
+          <li class="text-1">- Cổ đông không có điều kiện đến tham dự trực tiếp tại Đại hội vẫn có thể theo dõi diễn biến cuộc họp trực tiếp và gửi câu hỏi thảo luận đến Đại hội qua website tại bất cứ đâu mà không cần phải có mặt trực tiếp tại Đại hội.</li>
+          <li class="text-1">- Thực hiện quyền lợi biểu quyết/ bầu cử của mình dù ở bất cứ đâu.</li>
+          <li class="text-1">- Hệ thống EzGSM hỗ trợ song ngữ Anh – Việt giúp cổ đông trong nước và nước ngoài đều có thể theo dõi và bỏ phiếu các vấn đề tại Đại hội dễ dàng.</li>
+          
+        </ul>
+      <h4>2. Dịch vụ cung cấp</h4>
+      <ul><p class="text-top">a. Tư vấn tổ chức họp Đại hội đồng Cổ đông</p>
+           <li class="text-1">Bao gồm việc giải đáp những vướng mắc về trình tự, thủ tục pháp lý liên quan tới tổ chức Đại hội, hỗ trợ xây dựng, rà soát các tài liệu trong chương trình Đại hội, tư vấn các nội dung phát sinh tại Đại hội; hỗ trợ thực hiện các thủ tục Công bố thông tin sau khi tổ chức Đại hội theo đúng quy định của pháp luật.</li>
+      </ul>
+      <ul>
+        <p class="text-top">b. Cung cấp hệ thống EzGSM – Giải pháp tổ chức Đại hội đồng cổ đông</p>
+        <li class="text-1">EzGSM cung cấp tiện ích công nghệ giúp cổ đông có thể tham dự đại hội bằng hình thức trực tuyến và bỏ phiếu điện tử, qua đó doanh nghiệp có thể tăng tối đa số lượng cổ đông tham dự và tiết kiệm chi phí tổ chức Đại hội;</li>
+        <li class="text-1">EzGSM còn hỗ trợ Doanh nghiệp tổ chức ĐHĐCĐ theo phương thức truyền thống - trực tiếp hoặc trực tiếp kết hợp với trực tuyến thông qua các tính năng chuyên biệt như: Quản lý Đại hội; quản lý thông tin ủy quyền; đăng ký đại biểu; biểu quyết và bầu cử; kiểm phiếu…</li>
+      </ul>
+      <ul>
+        <p class="text-top">c. Hỗ trợ cơ sở, vật chất tổ chức họp Đại hội đồng Cổ đông
+        </p>
+        <li class="text-1">Cung cấp gói dịch vụ quay phát trực tuyến cuộc họp Đại hội đồng cổ đông, đảm bảo chất lượng video phát trực tuyến để cổ đông theo dõi tiến trình Đại hội qua website.</li>
+        <li class="text-1">Hỗ trợ doanh nghiệp địa điểm tổ chức ĐHĐCĐ với đầy đủ cơ sở, vật chất, trang thiết bị hiện đại:
+          <li class="text-2">Phòng họp với sức chứa gần 200 chỗ ngồi chuyên dụng trong việc tổ chức ĐHĐCĐ;</li>
+          <li class="text-2">Địa điểm thuận tiện giao thông, có sân để ô tô xe máy miễn phí, hỗ trợ tiệc trà (theo yêu cầu).</li>
+          <li class="text-2">Thiết bị âm thanh, ánh sáng, máy chiếu hiện đại, hỗ trợ truyền hình trực tuyến diễn biến Đại hội. Hỗ trợ nhân sự tổ chức ĐHĐCĐ (đón tiếp đại biểu, kĩ thuật...);</li>
+            <p>Chi tiết về giải pháp EzGSM xem <a href="https://ezir.fpts.com.vn/upload/EzGSM.pdf" style="color:#187cad ;">tại đây</a></p>
+        </li>
+      </ul>
+    </div>
+    <div class="moder-footer">
+        <button class="moder-closeno2">Đóng</button>
+    </div>
+</div>
+<div class="line-model-view">
+</div>
 
+  <div class="container-model">
+      <div class="column-model1">
+          <h2>KHỐI TƯ VẤN TÀI CHÍNH DOANH NGHIỆP</h2>
+          <div class="contact-model">
+            <div id="img-model"><i class="fa-solid fa-location-dot"></i></div>
+              <span>Trụ sở Hà Nội</span>
+          </div>
+          <div class="contact-model">
+            <div id="img-model"><i class="fa-solid fa-phone"></i></div>
+              <span>19006446 (4504/4502)</span>
+          </div>
+          <div class="contact-model">
+             <div id="img-model"><i class="fa-regular fa-envelope"></i></div>
+              <span><a  href="mailto:ezir@fots.com.vn">ezir@fpts.com.vn</a></span>
+          </div>
+      </div>
+      <div class="column-model2">
+          <h2>PHÒNG TƯ VẤN TÀI CHÍNH DOANH NGHIỆP</h2>
+          <div class="contact-model">
+            <div id="img-model"><i class="fa-solid fa-location-dot"></i></div>
+              <span>Chi nhánh TP. Hồ Chí Minh</span>
+          </div>
+          <div class="contact-model">
+              <div id="img-model"><i class="fa-solid fa-phone"></i></div>
+              <span>19006446 (8602/7591)</span>
+          </div>
+          <div class="contact-model">
+             <div id="img-model"><i class="fa-regular fa-envelope"></i></div>
+              <span ><a href="mailto:ezir_hcm@fots.com.vn">ezir_hcm@fpts.com.vn</a></span>
+          </div>
+      </div>
+  </div>
+ </div>
+ <!--IR-->
+ <div class="moder-viewno3 hideno3 upview">
+  <div class="moder-innerno3">
+    <div class="moder-headerno3">
+     <p class="head-model">Tư vấn Quan hệ Nhà đầu tư IR
+    </p> <i class="fa-solid fa-xmark"></i>
+    </div>
+    <div class="moder-body">
+      <p style="text-align: justify;">Quan hệ Nhà đầu tư (Investor Relation - IR) là một quá trình tương tác liên tục, chủ động và tích cực giữa Doanh nghiệp với cổ đông và nhà đầu tư. Hoạt động IR cung cấp cho không chỉ cổ đông mà còn cộng đồng nhà đầu tư những thông tin chính xác về các vấn đề của Doanh nghiệp, giúp họ có đủ thông tin để đưa ra những quyết định đầu tư của mình. IR còn là một phần của hoạt động quyền cổ đông, đảm bảo quyền và lợi ích chính đáng của cổ đông, bao gồm từ việc tiếp cận thông tin doanh nghiệp chính xác và kịp thời, tham dự và biểu quyết tại các cuộc họp Đại hội đồng cổ đông, nhận cổ tức,… và các quyền khác theo quy định của pháp luật. Quan hệ Nhà đầu tư hiệu quả góp phần quan trọng trong việc tạo nên vị thế tốt cho Doanh nghiệp trên thị trường, gia tăng uy tín và tạo thuận lợi trong việc thu hút dòng vốn đầu tư. Bên cạnh đó, làm tốt hoạt động IR giúp doanh nghiệp hạn chế rủi ro tranh chấp và mâu thuẫn lợi ích giữa cổ đông hay rủi ro bị thâu tóm, sáp nhập</p>
+       <h4> 1. Lợi ích khi sử dụng dịch vụ tư vấn </h4>
+       <ul>
+           <li class="text-1">- Đáp ứng nhu cầu trao đổi thông tin giữa doanh nghiệp và nhà đầu tư thông qua Giải pháp EzIR – Quan hệ nhà đầu tư trực tuyến được sắp xếp và lưu trữ khoa học, đầy đủ thông tin tài chính và phi tài chính do các Doanh nghiệp chủ động truyền tải đến Nhà đầu tư. Cùng với các công cụ hỗ trợ phân tích tài chính chuyên nghiệp được đầu tư bài bản, EzIR không chỉ là phương tiện công bố thông tin hữu hiệu dành cho doanh nghiệp, mà còn là trang thông tin toàn diện, chuyên sâu nhất để nhà đầu tư tiến hành phân tích, xem xét lựa chọn các cổ phiếu đầu tư</li>
+           <li class="text-1">- Tổ chức cuộc họp Đại hội đồng cổ đông đơn giản và hiệu quả với Giải pháp EzGSM – Tổ chức Đại hội đồng cổ đông trực tuyến. Bên cạnh việc tổ chức Đại hội đồng cổ đông trực tiếp truyền thống, EzGSM cung cấp tiện ích công nghệ giúp cổ đông tham dự hội nghị trực tuyến và bỏ phiếu điện tử. Hệ thống EzGSM hỗ trợ ngôn ngữ tiếng Anh và tiếng Việt, cho phép cổ đông ở bất cứ đâu đều có thể tham dự họp, xem toàn bộ tài liệu Đại hội chỉ bằng vài thao tác click chuột, thực hiện quyền bỏ phiếu của mình cho các nội dung tại đại hội chỉ cần thông qua smartphone hoặc máy tính</li>
+           <li class="text-1">- Lập Báo cáo thường niên và Báo cáo phát triển bền vững đầy đủ nội dung và tiêu chuẩn theo quy định pháp luật và thông lệ tốt về quản trị công ty với hình thức và bố cục bắt mắt, đưa những báo cáo này trở thành “vũ khí” phản ánh giá trị doanh nghiệp, khẳng định sự uy tín, chuyên nghiệp của doanh nghiệp trong mắt cổ đông và cộng đồng nhà đầu tư.</li>
+           <li class="text-1">- Giúp doanh nghiệp tiết kiệm chi phí trong việc duy trì nhân sự ở bộ phận IR chuyên trách, đầu tư cơ sở vật chất cho việc công bố thông tin, duy trì và vận hành website mà vẫn đảm bảo tuân thủ pháp luật về công bố thông tin và hiệu quả của công tác IR. Mỗi khách hàng sử dụng dịch vụ Tư vấn Quan hệ nhà đầu tư sẽ nhận được sự hỗ trợ trực tiếp từ đội ngũ chuyên viên tư vấn chuyên nghiệp, cập nhật kịp thời các quy định của pháp luật hiện hành cũng như được hỗ trợ tư vấn chiến lược quan hệ nhà đầu tư đầy đủ và chuyên sâu nhất. Ngoài ra khách hàng còn có thể nhận được sự hợp tác với các chuyên viên phân tích độc lập của FPTS. Dưới sự theo sát diễn biến thị trường và chuyên sâu theo từng ngành, hiểu đúng mối quan tâm của các nhà đầu tư các chuyên viên phân tích sẽ cập nhất các báo cáo phân tích định kỳ về doanh nghiệp.</li>
+           <li class="text-1">- Bên cạnh các dịch vụ tư vấn cơ bản, các khách hàng nếu có nhu cầu sẽ được cung cấp các dịch vụ chuyên sâu hơn để nâng cao hiệu quả và chất lượng hoạt động IR cho doanh nghiệp (Gói nâng cao và Gói chuyên sâu) như tư vấn chính sách cổ tức phù hợp, lập kế hoạch kinh doanh và dự báo tài chính, nhận các báo cáo phân tích ngành, phân tích doanh nghiệp, xây dựng chiến lược quan hệ nhà đầu tư và tiếp xúc nhà đầu tư, tổ chức các sự kiện/ hội thảo kết nối giữa doanh nghiệp, nhà đầu tư và các công ty chứng khoán,…</li>
+          
+       </ul>
+      <h4>2. Dịch vụ cung cấp</h4>
+      <ul>
+           <li class="text-1">Để đáp ứng các nhu cầu đa dạng của từng đối tượng khách hàng, sản phẩm Tư vấn Quan hệ nhà đầu tư (IR) được chia thành các gói dịch vụ sau:
+               <p >
+                 <img class="img-IR" src="./img/GioithieusanphamIR.png" alt="">
+               </p>
+           </li>
+           
+          
+      </ul>
+    </div>
+    <div class="moder-footer">
+        <button class="moder-closeno3">Đóng</button>
+    </div>
+</div>
+<div class="line-model-view">
+</div>
+
+  <div class="container-model">
+      <div class="column-model1">
+          <h2>KHỐI TƯ VẤN TÀI CHÍNH DOANH NGHIỆP</h2>
+          <div class="contact-model">
+            <div id="img-model"><i class="fa-solid fa-location-dot"></i></div>
+              <span>Trụ sở Hà Nội</span>
+          </div>
+          <div class="contact-model">
+            <div id="img-model"><i class="fa-solid fa-phone"></i></div>
+              <span>19006446 (4504/4502)</span>
+          </div>
+          <div class="contact-model">
+             <div id="img-model"><i class="fa-regular fa-envelope"></i></div>
+              <span><a  href="mailto:ezir@fots.com.vn">ezir@fpts.com.vn</a></span>
+          </div>
+      </div>
+      <div class="column-model2">
+          <h2>PHÒNG TƯ VẤN TÀI CHÍNH DOANH NGHIỆP</h2>
+          <div class="contact-model">
+            <div id="img-model"><i class="fa-solid fa-location-dot"></i></div>
+              <span>Chi nhánh TP. Hồ Chí Minh</span>
+          </div>
+          <div class="contact-model">
+              <div id="img-model"><i class="fa-solid fa-phone"></i></div>
+              <span>19006446 (8602/7591)</span>
+          </div>
+          <div class="contact-model">
+             <div id="img-model"><i class="fa-regular fa-envelope"></i></div>
+              <span ><a href="mailto:ezir_hcm@fots.com.vn">ezir_hcm@fpts.com.vn</a></span>
+          </div>
+      </div>
+  </div>
+ </div>
+ <!---->
+  
+ <div class="moder-viewno4 hideno4 upview">
+  <div class="moder-innerno4">
+    <div class="moder-headerno4">
+     <p class="head-model">Tư vấn Lập Báo cáo thường niên
+    </p> <i class="fa-solid fa-xmark"></i>
+    </div>
+    <div class="moder-body">
+      <p style="text-align: justify; color: #4f4f4f; font-size: 12px;">Báo cáo thường niên là phượng tiện truyền tải thông tin của Doanh nghiệp đến cổ đông và nhà đầu tư, thể hiện quá trình hoạt động kinh doanh, lợi nhuận và các hoạt động liên quan khác của chính doanh nghiệp đó trong một năm tài chính. Một báo cáo thường niên tốt không chỉ cần đảm bảo nội dung đầy đủ và minh bạch, mà còn cần đến sự ấn tượng và sáng tạo trong bố cục trình bày. Không chỉ dữ liệu tài chính, những con số, biểu đồ, hình ảnh được sắp đặt hợp lý, đẹp mắt thể hiện sự tôn trọng, hiểu biết, quan tâm và chuyên nghiệp của doanh nghiệp trong mắt cổ đông và cộng đồng nhà đầu tư</p>
+       <h4> 1. Lợi ích khi sử dụng sản phẩm dịch vụ của FPTS. </h4>
+       <ul>
+           <p class="text-1">Dịch vụ tư vấn lập Báo cáo thường niên của FPTS giúp Doanh nghiệp:</p>
+           <li class="text-4" >Đảm bảo tuân thủ nghĩa vụ công bố Báo cáo thường niên theo quy định của pháp luật. 
+            Khách hàng được tư vấn lộ trình lập báo cáo, hỗ trợ xây dựng nội dung và thiết kế để đảm bảo báo cáo được công bố đầy đủ, đúng thời hạn theo quy định về công bố thông tin.</li>
+           <li class="text-4">Đưa Báo cáo thường niên trở thành “vũ khí” phản ánh giá trị nội tại doanh nghiệp, với nội dung thông tin tài chính và phi tài chính được khai thác phong phú, phân tích chuyên sâu bởi đội ngũ chuyên viên tư vấn dày dặn kinh nghiệm. Thấu hiểu được nhu cầu về thông tin của nhà đầu tư, Báo cáo thường niên là một trong những tài liệu có hàm lượng thông tin xác thực lớn nhất được doanh nghiệp gửi gắm đến cổ đông, nhà đầu tư vào cuối mỗi năm tài chính để trình bày kết quả đạt được và định hướng cho tương lai.</li>
+           <li class="text-4">Thu hút sự quan tâm của nhà đầu tư nhờ sự ấn tượng trong thiết kế của báo cáo: doanh nghiệp được hỗ trợ thiết kế Báo cáo thường niên, sắp xếp bố cục hài hòa giữa số liệu tài chính, biểu đồ, hình ảnh và các yếu tố đồ họa khác, nhằm truyền tải nội dung báo cáo đến độc giả một cách hiệu quả hơn.</li>
+           <li class="text-4">Cơ hội phát triển bền vững và quảng bá thương hiệu: thông tin phát triển bền vững trong báo cáo thể hiện thiện chí của Ban lãnh đạo doanh nghiệp đối với sự phát triển chung của xã hội và môi trường, từ đó nâng cao cơ hội được cộng đồng ủng hộ và là nền tảng thúc đẩy các mục tiêu chiến lược.</li>
+          
+       </ul>
+      <h4>2. Dịch vụ cung cấp</h4>
+      <ul style="list-style-type: disc;">
+           <li class="text-4" >Tư vấn xây dựng nội dung Báo cáo Thường niên theo quy định của pháp luật về công bố thông tin.
+           </li>
+           <li class="text-4">Hỗ trợ thiết kế báo cáo thường niên đảm bảo hài hòa về bố cục theo màu sắc nhận diện thương hiệu của doanh nghiệp.
+          </li>
+          <li class="text-4">Hỗ trợ in ấn và dịch thuật Báo cáo thường niên sang tiếng Anh: Báo cáo thường niên được in ấn chuyên nghiệp, dịch sang tiếng Anh với nội dung và thiết kế được bảo toàn so với bản tiếng Việt.
+          </li>
+           
+          
+      </ul>
+    </div>
+    <div class="moder-footer">
+        <button class="moder-closeno4">Đóng</button>
+    </div>
+</div>
+<div class="line-model-view">
+</div>
+
+  <div class="container-model">
+      <div class="column-model1">
+          <h2>KHỐI TƯ VẤN TÀI CHÍNH DOANH NGHIỆP</h2>
+          <div class="contact-model">
+            <div id="img-model"><i class="fa-solid fa-location-dot"></i></div>
+              <span>Trụ sở Hà Nội</span>
+          </div>
+          <div class="contact-model">
+            <div id="img-model"><i class="fa-solid fa-phone"></i></div>
+              <span>19006446 (4504/4502)</span>
+          </div>
+          <div class="contact-model">
+             <div id="img-model"><i class="fa-regular fa-envelope"></i></div>
+              <span><a  href="mailto:ezir@fots.com.vn">ezir@fpts.com.vn</a></span>
+          </div>
+      </div>
+      <div class="column-model2">
+          <h2>PHÒNG TƯ VẤN TÀI CHÍNH DOANH NGHIỆP</h2>
+          <div class="contact-model">
+            <div id="img-model"><i class="fa-solid fa-location-dot"></i></div>
+              <span>Chi nhánh TP. Hồ Chí Minh</span>
+          </div>
+          <div class="contact-model">
+              <div id="img-model"><i class="fa-solid fa-phone"></i></div>
+              <span>19006446 (8602/7591)</span>
+          </div>
+          <div class="contact-model">
+             <div id="img-model"><i class="fa-regular fa-envelope"></i></div>
+              <span ><a href="mailto:ezir_hcm@fots.com.vn">ezir_hcm@fpts.com.vn</a></span>
+          </div>
+      </div>
+  </div>
+ </div>
+ <div class="moder-viewno5 hideno5 upview">
+  <div class="moder-innerno5">
+    <div class="moder-headerno5">
+     <p class="head-model">Tư vấn Lập Báo phát triển bền vững
+    </p> <i class="fa-solid fa-xmark"></i>
+    </div>
+    <div class="moder-body">
+      <p style="text-align: justify; color: #4f4f4f; font-size: 12px;">Báo cáo phát triển bền vững là một công cụ giúp doanh nghiệp tổ chức và công bố thông tin về hiệu quả và tính bền vững trong hoạt động kinh doanh của mình. Thông qua việc báo cáo công khai, minh bạch, có trách nhiệm và thể hiện nỗ lực của mình trong việc định hướng phát triển bền vững và phát triển chung cho môi trường và xã hội, doanh nghiệp củng cố được lòng tin của các bên liên quan (cơ quan quản lý, đối tác, khách hàng, nhà đầu tư,…), giúp gia tăng uy tín và giá trị thương hiệu của doanh nghiệp.</p>
+       <h4> 1. Lợi ích khi sử dụng sản phẩm dịch vụ tư vấn của FPTS </h4>
+       <ul>
+           <p class="text-1">Dịch vụ tư vấn lập Báo cáo phát triển bền vững giúp Doanh nghiệp:</p>
+           <li class="text-1" >- Đảm bảo tuân thủ nghĩa vụ công bố theo quy định của pháp luật và thông lệ quản trị tốt. Khách hàng được tư vấn lộ trình lập báo cáo, đánh giá hiệu quả hoạt động của doanh nghiệp trên các khía cạnh quản trị, môi trường và xã hội trong một báo cáo độc lập hoặc tích hợp trong báo cáo thường niên.</li>
+           <li class="text-1">- Lập báo cáo phát triển bền vững để nâng cao hình ảnh doanh nghiệp trong mắt nhìn của cộng đồng. Xoay quanh việc khai thác giá trị doanh nghiệp nhiều khía cạnh, Báo cáo phát triển bền vững giúp doanh nghiệp minh bạch hóa thông tin nội bộ, truyền tải hiệu quả mong muốn và nỗ lực đóng góp cho sự phát triển chung của cả cộng đồng. Với xu thế bảo vệ môi trường và quyền con người ngày càng phát triển, Báo cáo phát triển bền vững là phương thức tốt để doanh nghiệp khẳng định vị thế trong thị trường đầy tính cạnh tranh.</li>
+           <li class="text-1">- Khẳng định tư tưởng quản trị hiện đại theo tiêu chuẩn quốc tế: Bộ tiêu chuẩn quốc tế về lập báo cáo phát triển bền vững toàn cầu (GRI Standards) của Tổ chức sáng kiến báo cáo toàn cầu (GSSB) được áp dụng trong hầu hết báo cáo của các doanh nghiệp niêm yết quy mô lớn ở phạm vi toàn thế giới đã cho thấy tính chuẩn mực của các tiêu chí trong bộ tiêu chuẩn này. Dựa trên những đánh giá khách quan ở từng tiêu chí, doanh nghiệp có định hướng rõ ràng hơn ở từng mảng quản trị để hoạt động hiệu quả trong dài hạn.</li>
+           <li class="text-1">- Ghi điểm với nhà đầu tư nhờ sự khác biệt: trong khi Báo cáo thường niên là tài liệu bắt buộc phải công bố với tất cả doanh nghiệp trên thị trường chứng khoán, thì Báo cáo phát triển bền vững lại là tài liệu riêng biệt được Ban lãnh đạo chủ động xuất bản, với nội dung sáng tạo hơn hẳn và thiết kế mang đậm dấu ấn văn hóa doanh nghiệp.</li>
+           <li class="text-1">- Cơ hội phát triển bền vững và quảng bá thương hiệu: thông tin phát triển bền vững trong báo cáo thể hiện thiện chí của Ban lãnh đạo doanh nghiệp đối với sự phát triển chung của xã hội và môi trường, từ đó nâng cao cơ hội được cộng đồng ủng hộ và là nền tảng thúc đẩy các mục tiêu chiến lược.</li>
+          
+       </ul>
+      <h4>2. Dịch vụ cung cấp</h4>
+      <ul>
+           <li class="text-1" >- Rà soát, tư vấn chọn lựa các chỉ tiêu và xây dựng chiến lược phát triển bền vững phù hợp.
+           </li>
+           <li class="text-1">- Tư vấn lập Báo cáo phát triển bền vững (bao gồm cả nội dung và thiết kế)
+          </li>
+          
+          <li class="text-1">- Hỗ trợ in ấn và dịch thuật Báo cáo phát triển bền vững sang tiếng Anh: Báo cáo phát triển bền vững được in ấn chuyên nghiệp, dịch sang tiếng Anh với nội dung và thiết kế được bảo toàn so với bản tiếng Việt
+          </li>
+           
+          
+      </ul>
+    </div>
+    <div class="moder-footer">
+        <button class="moder-closeno5">Đóng</button>
+    </div>
+</div>
+<div class="line-model-view">
+</div>
+
+  <div class="container-model">
+      <div class="column-model1">
+          <h2>KHỐI TƯ VẤN TÀI CHÍNH DOANH NGHIỆP</h2>
+          <div class="contact-model">
+            <div id="img-model"><i class="fa-solid fa-location-dot"></i></div>
+              <span>Trụ sở Hà Nội</span>
+          </div>
+          <div class="contact-model">
+            <div id="img-model"><i class="fa-solid fa-phone"></i></div>
+              <span>19006446 (4504/4502)</span>
+          </div>
+          <div class="contact-model">
+             <div id="img-model"><i class="fa-regular fa-envelope"></i></div>
+              <span><a  href="mailto:ezir@fots.com.vn">ezir@fpts.com.vn</a></span>
+          </div>
+      </div>
+      <div class="column-model2">
+          <h2>PHÒNG TƯ VẤN TÀI CHÍNH DOANH NGHIỆP</h2>
+          <div class="contact-model">
+            <div id="img-model"><i class="fa-solid fa-location-dot"></i></div>
+              <span>Chi nhánh TP. Hồ Chí Minh</span>
+          </div>
+          <div class="contact-model">
+              <div id="img-model"><i class="fa-solid fa-phone"></i></div>
+              <span>19006446 (8602/7591)</span>
+          </div>
+          <div class="contact-model">
+             <div id="img-model"><i class="fa-regular fa-envelope"></i></div>
+              <span ><a href="mailto:ezir_hcm@fots.com.vn">ezir_hcm@fpts.com.vn</a></span>
+          </div>
+      </div>
+  </div>
+ </div>
+ <div class="moder-viewno6 hideno6 ">
+  <div class="moder-innerno6">
+    <div class="moder-headerno6">
+     <p class="head-model">Tư vấn xây dựng, sửa đổi Điều lệ/Quy chế quản trị
+    </p> <i class="fa-solid fa-xmark"></i>
+    </div>
+    <div class="moder-body">
+      
+       <h4> 1. Lợi ích khi sử dụng sản phẩm dịch vụ </h4>
+       <ul>
+           <p class="text-1">Điều lệ, Quy chế quản trị Công ty, Quy chế hoạt động của Hội đồng quản trị, Ban kiểm soát là những văn bản pháp lý quan trọng của mỗi công ty, được xem là luật riêng của công ty. Ngoài quy định của luật, đây là khung pháp lý quan trọng trong quản trị, điều hành doanh nghiệp.</p>
+           <li class="text-4" >FPTS với đội ngũ chuyên viên nhiều kinh nghiệm, am hiểu pháp luật, chuyên sâu về quản trị công ty luôn sẵn sàng tư vấn và hỗ trợ các doanh nghiệp trong việc sửa đổi Điều lệ công ty và các Quy chế quản trị công ty:</li>
+           <li class="text-4">Đảm bảo tuân thủ các quy định của pháp luật.
+          </li>
+           <li class="text-4">Tư vấn xây dựng, sửa đổi để phù hợp với thực tiễn hoạt động quản trị và điều hành của công ty, giúp các doanh nghiệp xây dựng Điều lệ và các Quy chế quản trị nội bộ có chất lượng, thuận tiện trong quản trị điều hành.</li>
+           <li class="text-4">Lưu ý và giải đáp cho doanh nghiệp việc các quy định này vào thực tế.</li>
+          
+       </ul>
+      <h4>2. Dịch vụ cung cấp</h4>
+      <ul style="list-style-type: disc;">
+           <li class="text-4" >Xây dựng, sửa đổi nội dung Điều lệ Công ty, Quy chế Quản trị Công ty, Quy chế hoạt động của Hội đồng quản trị, Ban kiểm soát hoặc Ủy ban kiểm toán và các quy chế khác phù hợp với các văn bản pháp luật hiện hành (Luật Doanh nghiệp, Luật Chứng khoán, các quy định và thông lệ tốt về quản trị công ty áp dụng cho Công ty đại chúng).
+           </li>
+      </ul>
+    </div>
+    <div class="moder-footer">
+        <button class="moder-closeno6">Đóng</button>
+    </div>
+</div>
+<div class="line-model-view">
+</div>
+
+  <div class="container-model">
+      <div class="column-model1">
+          <h2>KHỐI TƯ VẤN TÀI CHÍNH DOANH NGHIỆP</h2>
+          <div class="contact-model">
+            <div id="img-model"><i class="fa-solid fa-location-dot"></i></div>
+              <span>Trụ sở Hà Nội</span>
+          </div>
+          <div class="contact-model">
+            <div id="img-model"><i class="fa-solid fa-phone"></i></div>
+              <span>19006446 (4504/4502)</span>
+          </div>
+          <div class="contact-model">
+             <div id="img-model"><i class="fa-regular fa-envelope"></i></div>
+              <span><a  href="mailto:ezir@fots.com.vn">ezir@fpts.com.vn</a></span>
+          </div>
+      </div>
+      <div class="column-model2">
+          <h2>PHÒNG TƯ VẤN TÀI CHÍNH DOANH NGHIỆP</h2>
+          <div class="contact-model">
+            <div id="img-model"><i class="fa-solid fa-location-dot"></i></div>
+              <span>Chi nhánh TP. Hồ Chí Minh</span>
+          </div>
+          <div class="contact-model">
+              <div id="img-model"><i class="fa-solid fa-phone"></i></div>
+              <span>19006446 (8602/7591)</span>
+          </div>
+          <div class="contact-model">
+             <div id="img-model"><i class="fa-regular fa-envelope"></i></div>
+              <span ><a href="mailto:ezir_hcm@fots.com.vn">ezir_hcm@fpts.com.vn</a></span>
+          </div>
+      </div>
+  </div>
+ </div>
+
+ <!---->
     <!----------------------->
 
 

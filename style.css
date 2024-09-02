@@ -1,60 +1,172 @@
+@media screen and (max-width: 1200px) {
+    .mySwiper {
+        width: 100%;
+    }
+    .big-img
+    {
+        margin-left: -30px;
+    }
+    .search-container
+    {
+        transform: translate(-65px, 5px);
+    }
+}
 
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .big-img {
+        margin-left: -85px;
+    }
+
+    .search-container {
+        transform: translate(-90px, 22px);
+    }
+    .search-form
+    {
+        margin-top:50px ;
+    }
+    .content-omega
+    {
+        margin-top: 50px;
+    }
+    .omega-top p
+    {
+        font-size: 20px;
+    }
+    .omega-bottom li
+    {
+        font-size: 20px;
+    }
+    .menu ul {
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    .search-container
+        {
+        margin-right: 20px
+        }
+    .search-box input {
+        width: 100%;
+    }
+
+    .search-box > button {
+        right: 30px;
+    }
+    
+    .menu {
+        margin-left: 40px;
+    }
+    .container
+    {
+       margin-top: 80px;
+    }
+    .search-box button
+    {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .big-img {
+        grid-template-columns: repeat(auto-fill, minmax(20px, 1fr));
+    }
+
+    .search-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .search-container {
+        margin-left: 20px;
+    }
+
+    .search-box input {
+        padding: 10px 40px;
+        font-size: 16px;
+        transform: translateY(50px);
+    }
+    .search-box::before 
+    {
+        margin-top: 50px;
+    }
+    .products-info
+    {
+        transform: translateY(49px);
+    }
+    .search-box > button {
+        right: 20px;
+    }
+
+    .menu {
+        margin-left: 20px;
+    }
+
+    .menu ul {
+        margin-left: 10px;
+    }
+
+    .swiper-horizontal {
+        height: 300px;
+    }
+
+    .button-next {
+        right: 20px;
+        left: 20px;
+        display: none;
+     
+    }
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #deecf5;
-    color: #333;
-    padding-top: 20px;
-  
-}
-
 header 
 {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    
     background:#f5f7f8;
     position: fixed;
     width: 100%;
-    top: 0;
-    left: 0;
-    transition: 0.2s ease-in all;
+    height: 50px;  
     z-index: 9999;
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
+    align-items: center;
+    overflow: hidden;
    
 }
 
 body {
-    
     position: relative;
     height: 100%;
     background: linear-gradient(to bottom, rgb(245 247 248), rgb(195 194 194 / 5%), rgb(255 255 255 / 10%), rgb(206 0 184 / 3%), rgb(245 247 248)), linear-gradient(to right, rgb(161 112 174 / 6%), rgb(126 190 202 / 10%), rgb(126 190 202 / 10%), transparent, rgb(46 215 230 / 10%)) ;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #000;
-    margin: 0;
-    padding: 0;
+    padding: 0px 0px;
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
+    overflow: hidden;
+    width: 100%;
 }
 
 swiper-container {
-    width: 85%;
-    height: 100%;
+    width: 100%;
+    height: auto;
+    
 
 }
 
 .mySwiper {
     overflow: initial;
+    z-index: 10;
    
 }
 .swiper-horizontal
@@ -64,6 +176,8 @@ swiper-container {
   
 }
 .big-img {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
     text-align: center;
     font-size: 18px;
     background: linear-gradient(to bottom, rgb(245 247 248), rgb(195 194 194 / 5%), rgb(255 255 255 / 10%), rgb(206 0 184 / 3%), rgb(245 247 248)), linear-gradient(to right, rgb(161 112 174 / 6%), rgb(126 190 202 / 10%), rgb(126 190 202 / 10%), transparent, rgb(46 215 230 / 10%)) ;
@@ -71,10 +185,10 @@ swiper-container {
     grid-auto-flow: column;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     grid-template-rows: repeat(2, minmax(0, 1fr));
-    gap: 24px;
-    
     background-size: cover;
-    
+    width: 80%;
+   
+    transform: translate(140px, 0px);
 }
 
 .big-img img {
@@ -90,12 +204,19 @@ swiper-container {
 }
 
 swiper-container::part(button-next) {
-    display: none;
+    width: 250px;
+    height: 25px;
+    top: 40%;
+    right: -30px;
+ 
 }
 
 swiper-container::part(button-prev) {
-    display: none;
-
+    
+    width: 250px;
+    height: 25px;
+    top: 40%;
+    left: -30px;
 }
 
 swiper-container::part(pagination) 
@@ -113,13 +234,15 @@ swiper-container::part(pagination)
 .btn-next {
     position: absolute;
     top: 35%;
-    right: 10px;
-    font-size: 5px;
+    right: 70px;
+    display: none;
+   
 }
 .btn-prev {
     position: absolute;
     top: 35%;
-    left: 10px;
+    left: 70px;
+    display: none;
 }
 .slide-item{
     display: flex;
@@ -127,22 +250,29 @@ swiper-container::part(pagination)
     align-items: center;
 }
 
-.container {
-    position: relative;
-    width: 1100px;
-    margin: auto;
-    margin-top:40px;
-}
 
 .flex-center{
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin: auto;
-    height: 15px;
-    margin-left: 160px;
+    position: relative;
+    width: 100%;
+   text-align: center;
+   
+    
 }
-
+#trangchu
+{
+    height: 500px;
+}
+.menu{
+    text-align: center;
+     width: 70%;
+}
+.logo
+{
+    width: 30%;
+}
 
 .logo img {
     height: 30px;
@@ -153,13 +283,12 @@ swiper-container::part(pagination)
 }
 
 .menu ul {
+    
     display: flex;
     list-style: none;
-    text-align: center;
-    margin-right: 305px;
     flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+    flex-wrap: wrap;
+    
     
 }
 
@@ -175,15 +304,18 @@ swiper-container::part(pagination)
 }
 .search-container{
     margin-bottom: 5%;
-    margin-left: 55px;
+    margin-left: 160px;
+    text-align: left;
 }
 .search-container h1  {
+    font-size: 2.5rem;
     font-size: 35px;
     color: #454848;
-    max-width: 600px;
     font-style: italic;
     padding-top: 60px;
     line-height: 1.5;
+    max-width: 100%;
+    
 }
 .search-container span
 {
@@ -192,8 +324,9 @@ swiper-container::part(pagination)
 }
 
 .search-container p {
-    font-size: 18px;
+    font-size: 1rem;
     color: #666;
+    font-weight: 70%;
     
 }
 .ch 
@@ -226,46 +359,71 @@ swiper-container::part(pagination)
     font-size: 11px;
     color: #007DB8;
 }
+.search-form
+{
+    width: 100%;
+    height: auto;
+    
+}
 .search-box
 {
         position: relative;
-        width: 1100px;
-        margin-left: 55px;
+        width: 76%;
+        margin:0 auto;
+        justify-content: center;
+       
         
 }
 
- 
+.products-info 
+{
+    z-index: 1000;
+    border: 2px solid #c1deeb ;
+    max-height: 200px; 
+    overflow-y: auto !important; 
+    padding-right: 5px;
+    position: absolute; 
+    z-index: 1000; 
+    width: 100%;
+    border-bottom-left-radius: 20px ;
+    border-bottom-right-radius: 20px ;
+    background: #fff;
+    border-top: 1px dashed #c1deeb;
+    margin-top: 2px;
+    display: none;
+    overscroll-behavior: contain;
+}
 .search-box::before{
     content: '';
     position: absolute;
     width: 2px;
-    height: 30px;
+    height: 32px;
     background: #bae9ff;
     z-index: 1;
-    top: 9px;
+    top: 7px;
     left: 55px;
     display: flex;
 }
 .search-box input {
-    width: 90% !important;
+    width: 100%;
     outline: 1px solid #ffffff;
-    outline-offset: 6px;
+    outline-offset: 5px;
     border-width: 0px;
     color: #555;
-    padding: 20px 82px;
-    border-radius: 40px;
+    padding: 15px 60px;
+    border-radius: 30px;
     border: 5px solid transparent;
     position: relative;
     background-repeat: no-repeat;
     background-size: 25px 25px;
-    background-position: 12px 7px;
+    background-position: 10px 8px;
     background-image: url(./img/loupe-search-home.png);
     font-weight: 400;
-    font-size: 22px;
+    font-size: 18px;
     letter-spacing: 0.02rem;
     font-style: normal;
     font-family: var(--font-family-light);
-    height: 40px;
+    height: 50px;
    
 }
 .search-box input:focus {
@@ -275,11 +433,11 @@ swiper-container::part(pagination)
     border-top: 2px solid #c1deeb ;
     border-left: 2px solid #c1deeb;
     border-right: 2px solid #c1deeb;
-    height: 45px;
+    height: 50px;
     transition: all 0.5s ease;
 }
 .search-box > button {
-    font-size: 13px;
+    font-size: 0.875rem;
     font-weight: normal;
     font-family: var(--font-family-all);
     border: none;
@@ -290,13 +448,22 @@ swiper-container::part(pagination)
     padding: 0;
     pointer-events: auto;
     position: absolute;
-    right: 120px;
-    top: 7px;
+    right: 12px;
+    top: 50px;
     width: 80px;
     color: #fff;
     background-color: #337ab7;
     border-color: #2e6da4;
+    transform: translateY(-120%);
 
+    
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
 }
 .swiper-pagination
 {
@@ -307,27 +474,12 @@ swiper-container::part(pagination)
 }
 swiper-container
 {
-    width: 85%;
+    width: 100%;
     height: 100%;
 }
+
 /*------------------*/
 
-.products-info 
-{
-    border: 2px solid #c1deeb ;
-    max-height: 200px; 
-    overflow-y: scroll !important; 
-    padding-right: 5px;
-    position: absolute; 
-    z-index: 1000; 
-    width: 90%;
-    border-bottom-left-radius: 20px ;
-    border-bottom-right-radius: 20px ;
-    background: #fff;
-    border-top: 1px dashed #c1deeb;
-    margin-top: 2px;
-    display: none;
-}
 ::-webkit-scrollbar 
 {
     width: 5px; 
@@ -400,7 +552,7 @@ swiper-container
 }
 .highlight {
     
-    color: rgb(102, 175, 243); /* Màu chữ đỏ */
+    color: rgb(102, 175, 243); 
     font-weight: bold;
 
 }
