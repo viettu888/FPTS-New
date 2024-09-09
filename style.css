@@ -303,16 +303,12 @@ swiper-container::part(pagination)
     margin-right: 20px;
 }
 .search-container{
-    margin-bottom: 5%;
-    margin-left: 140px;
-    text-align: left;
+    margin: 70px 0 70px 140px;
 }
 .search-container h1  {
-    font-size: 2.5rem;
     font-size: 35px;
     color: #454848;
     font-style: italic;
-    padding-top: 60px;
     line-height: 1.5;
     max-width: 100%;
     
@@ -427,11 +423,8 @@ swiper-container::part(pagination)
 }
 .search-box input:focus {
     border-radius: 25px 25px 0 0; 
-    border-bottom:2px solid #c1deeb;
     outline: none;
-    border-top: 2px solid #c1deeb ;
-    border-left: 2px solid #c1deeb;
-    border-right: 2px solid #c1deeb;
+    border: 2px solid #c1deeb;
     height: 50px;
     transition: all 0.5s ease;
 }
