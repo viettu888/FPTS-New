@@ -74,6 +74,7 @@ body {
 }
 .FPT
 {
+    justify-content: space-between;
     width: 100%;
     display: flex;
     border: 1px solid #f6f6f7;
@@ -83,6 +84,10 @@ body {
     background: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
    
+}
+.headline
+{
+    display: flex;
 }
 .icon
 {
@@ -116,22 +121,20 @@ body {
 }
 .search input
 {
-    margin-left: 150px;
     align-items: center;
-    margin-left: 470px;
-    margin-top: 13px;
+    margin: 13px;
     width: 373px;
     height: 30px;
     border: 1px solid #deecf5;
     border-radius: 20px;
-    text-align: center;
-   
+    text-align: left;
     font-size: 12px;
     font-style: normal;
     background-repeat: no-repeat;
     background-size: 15px 15px;
     background-position: 13px 6px;
     background-image: url(./img/loupe-search-home.png);
+    padding-left: 35px;
 
 }
 input::placeholder{
@@ -497,8 +500,6 @@ margin-left: 20px;
 {
     display: flex;
     list-style: none;
-    
-    column-gap: 10px;
     background: linear-gradient(180deg, rgba(115, 152, 247, 0.1) 0%, rgba(92, 152, 223, 0.1) 100%), #FFFFFF;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -511,41 +512,48 @@ margin-left: 20px;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
-    
     width: 30%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     background: #fff;
-    padding: 9px 0px 0px 16px;
+    border: none    ;
 
 }
-#tintuc span
-{
-    color: #007DB8;
-    text-transform: uppercase;
-    padding: 10px 0 10px 0;
-}
-.info_news_box_left
-{
-    
-   
+.boxnews
+{   
     cursor: pointer;
+    color: #187cad;
+    padding: 10px;
+    opacity: 0;
+    border: none;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
 }
-.news_title
-{
-    margin-left: 15px;
+
+.boxnews.active {
+    opacity: 1;
+    color: #007DB8;
     font-size: 12px;
-    color:#007DB8;
+}
+
+/* Hide or show tabs */
+.tabcontent {
+    display: none;
+}
+
+.tabcontent.active {
+    display: block;
 }
 #bantin
 {
-    justify-content: center;
     font-style: normal;
     font-weight: 600;
-    font-size: 12px;
-    color: #007DB8;
-    text-transform: uppercase;
+    font-size: 18px;
     width: 70%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: #fff;
+    border: none;
 }
 .tab_news_details
 {
