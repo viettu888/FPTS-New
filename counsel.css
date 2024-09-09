@@ -11,26 +11,33 @@
     }
     .container-bot
     {
-       transform: translateY(-55px);
+        flex-direction: column;
+        align-items: center;
+        transform: translate(0px, 250px);
     }
-    .containerx, .container-bot {
+
+    .containerx {
         flex-direction: column;
         align-items: center;
        
     }
+    
     .Ezir-container, .EzGsm-container, .Ir-container, .report-container, .Charter-container {
         width: 80%;
         max-width: none;
-        margin: 10px;
+        margin: 15px;
     }
+   
 }
 
 @media screen and (max-width: 480px) {
     main {
         margin-top: 50px;
     }
-    .containerx, .container-bot {
-        padding: 0;
+    
+    .Ezir-container, .EzGsm-container, .Ir-container
+    {
+        height: 250px;
     }
     .Ezir-container, .EzGsm-container, .Ir-container, .report-container, .Charter-container {
         width: 90%;
@@ -39,6 +46,16 @@
     .containerx button, .container-bot button {
         width: 80px;
         font-size: 10px;
+    }
+    .container-bot
+    {
+        flex-direction: column;
+        align-items: center;
+        transform: translate(0px, 250px);
+    }
+    main
+    {
+        height: 100%;
     }
 }
 main {
@@ -63,6 +80,7 @@ main {
 main
 {
     width: 100%;
+    height: 100%;
     margin-top: 85px;
     background:url(./ggg.jpg);
     background-size: cover; 
@@ -85,6 +103,7 @@ main h2
         display: flex;
         margin-top: 30px;
         justify-content: space-evenly;
+        height: 500px;
 }
 .Ezir-container
 {
@@ -212,7 +231,8 @@ main h2
 {
     display: flex;
    justify-content: space-evenly;
-   padding: 50px;
+  margin: -300px 0;
+  
     
 }
 .report-container
@@ -323,8 +343,12 @@ main h2
     transition: transform 0.9s ease;
 }
 .card:hover {
-    transform: scaleY(1.2); 
-    border: 1px solid blueviolet;
+    
+    outline: 1px solid #0b75f0;
+    outline-offset: 6px;
+    height: 150px;
+    transform: translateY(-30px);
+    transition: 0.8s;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 .card:hover .details-button, .card:hover .line-animation {
@@ -384,14 +408,14 @@ main h2
 {
     content: "";
     position: absolute;
-    width: 40rem;
-    height: 300rem;
-    top: -5rem;
-    left: 30px;
-    z-index: -1;
-    transition: 1.5s;
+    width: 27rem;
+    height: 30rem;
+    top: -4rem;
+    left: 0px;
+    z-index: -5;
+    transition: 2s;
    background-image: url(./img/TuVanBack_edit_2.png);
-   transform: translateX(20px);
+   transform: translate(50px);
 }
 
 .report-container:hover .line-animation
@@ -406,6 +430,7 @@ main h2
     transition: 1.5s;
     background-image: url(./img/TuVanBack_edit_2.png);
     transform: translateX(20px);
+ 
 }
 .Charter-container:hover .line-animation
 {
@@ -416,7 +441,7 @@ main h2
     top: -3rem;
     left: 15px;
     z-index: -1;
-    transition: 1.5s;
+    transition: 0.5s;
     background-image: url(./img/TuVanBack_edit_2.png);
     transform: translateX(20px);
 }

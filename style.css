@@ -8,7 +8,7 @@
     }
     .search-container
     {
-        transform: translate(-65px, 5px);
+        margin-left: 200px;
     }
 }
 
@@ -66,7 +66,7 @@
     }
     .search-box button
     {
-        margin-top: 0px;
+        margin-top: 0;
     }
 }
 
@@ -97,7 +97,7 @@
         transform: translateY(49px);
     }
     .search-box > button {
-        right: 20px;
+        margin: 48px 0;
     }
 
     .menu {
@@ -163,7 +163,7 @@ swiper-container {
     
 
 }
-
+/*
 .mySwiper {
     overflow: initial;
     z-index: 10;
@@ -179,15 +179,14 @@ swiper-container {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 20px;
     text-align: center;
-    font-size: 18px;
-    background: linear-gradient(to bottom, rgb(245 247 248), rgb(195 194 194 / 5%), rgb(255 255 255 / 10%), rgb(206 0 184 / 3%), rgb(245 247 248)), linear-gradient(to right, rgb(161 112 174 / 6%), rgb(126 190 202 / 10%), rgb(126 190 202 / 10%), transparent, rgb(46 215 230 / 10%)) ;
+    font-size: 25px;
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     grid-template-rows: repeat(2, minmax(0, 1fr));
     background-size: cover;
     width: 80%;
-   
+    height: 160px;
     transform: translate(140px, 0px);
 }
 
@@ -248,9 +247,10 @@ swiper-container::part(pagination)
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 4px 7px;
 }
 
-
+*/
 .flex-center{
     display: flex;
     align-items: center;
@@ -304,7 +304,7 @@ swiper-container::part(pagination)
 }
 .search-container{
     margin-bottom: 5%;
-    margin-left: 160px;
+    margin-left: 140px;
     text-align: left;
 }
 .search-container h1  {
@@ -382,8 +382,7 @@ swiper-container::part(pagination)
     max-height: 200px; 
     overflow-y: auto !important; 
     padding-right: 5px;
-    position: absolute; 
-    z-index: 1000; 
+    position: absolute;  
     width: 100%;
     border-bottom-left-radius: 20px ;
     border-bottom-right-radius: 20px ;
@@ -428,7 +427,7 @@ swiper-container::part(pagination)
 }
 .search-box input:focus {
     border-radius: 25px 25px 0 0; 
-    border-bottom: none; 
+    border-bottom:2px solid #c1deeb;
     outline: none;
     border-top: 2px solid #c1deeb ;
     border-left: 2px solid #c1deeb;
@@ -458,6 +457,7 @@ swiper-container::part(pagination)
 
     
 }
+
 .swiper-slide {
     display: flex;
     justify-content: center;
@@ -556,4 +556,5 @@ swiper-container
     font-weight: bold;
 
 }
+
 

@@ -168,9 +168,10 @@
 }
 .head-model
 {
-    width: auto;
+    width: 504px;
     height: auto;
     overflow: hidden;
+    text-align: center;
 }
 .fa-xmark
 {
@@ -287,27 +288,18 @@ li{
 
 .container-model
 {
-   
+    width: 75%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    padding: 100px;
-    justify-content: space-around;
-
+    margin: 100px 175px;
+    justify-content: space-between;
 }
 .contact-model
 {
     display: flex;
     flex-wrap: wrap;
     
-}
-.column-model1
-{
-    transform: translate(-30px, 10px);
-}
-.column-model2
-{
-    transform: translate(70px, 10px);
 }
 .column-model1 > h2
 {

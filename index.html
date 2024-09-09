@@ -2,14 +2,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    
+   
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FPT Securities</title>
-    <link rel="stylesheet" href="style.css" />
+    
     <link rel="stylesheet" href=
    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.css">
    </link>
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="counsel.css"/>
     <link rel="stylesheet" href="main.css"/>
     <link rel="stylesheet" href="view.css">
@@ -17,6 +18,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
     <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/autoComplete.min.js"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/css/autoComplete.min.css">
@@ -31,20 +34,17 @@
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-        </style>
-   <style>
-
-      html
-      {
-        scroll-behavior: smooth;
-      }
     </style>
-  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
   </head>
   <body>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./myscripts.js"></script>
     <script src="./app.js"></script>
-    <script src="./app2.js"></script>
+    <script src="./slider.js"></script>
     <style>
       html
       {
@@ -66,9 +66,9 @@
           </ul>
         </div>
       </div>
-
+    
     </header>
-  
+   
     <!------------------------>
 
   <swiper-container class="mySwiper" 
@@ -117,137 +117,233 @@
                   <li class="omega-z">Trực tiếp chọn doanh nghiệp bên dưới</li>
                  </ul>
       </div>
-      <div class="container">
-        <swiper-container
-        id="swiperz"
-          class="mySwiper"
-          pagination="true"
-          pagination-clickable="true"
-          navigation="true"
-          loop="true"
-          auto-height="true"
-        >
-   <swiper-slide>
-            <div class="big-img">
-              <div class="slide-item"><img src="./img/R.png"alt=""/></div>
-              <div class="slide-item"><img src="./img/R.png"alt=""/></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-            </div>
-            <div style="width: 100%; height: 50px;" ></div>        
-          </swiper-slide>
-          <swiper-slide>
-            <div class="big-img">
-              <div class="slide-item"><img src="./img/R.png"alt=""/></div>
-              <div class="slide-item"><img src="./img/R.png"alt=""/></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-            </div>
-            <div style="width: 100%; height: 50px;" ></div>        
-          </swiper-slide>
-          <swiper-slide>
-            <div class="big-img">
-              <div class="slide-item"><img src="./img/R.png"alt=""/></div>
-              <div class="slide-item"><img src="./img/R.png"alt=""/></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-            </div>
-            <div style="width: 100%; height: 50px;" ></div>        
-          </swiper-slide>
-  
-         
-  
-          </swiper-container>
-  
-        <button class="btn-prev">
-          <div
-            part="button-prev"
-            class="swiper-button-prev"
-            tabindex="0"
-            role="button"
-            aria-label="Previous slide"
-            aria-controls="swiper-wrapper-b20e6478102fa29ff"
-          >
-          </div>
-          
-        </button>
-  
-        <button class="btn-next">
-          <div
-            part="button-next"
-            class="swiper-button-next"
-            tabindex="0"
-            role="button"
-            aria-label="Next slide"
-            aria-controls="swiper-wrapper-a5a487f47f6532e1"
-          >
-            
-          
-          </div>
-        </button>
+      
+      <div class="slick-slider">
+        <div class="element element-1">
+          <div class="slick-item">
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+        </div>
+        </div>
+        <div class="element element-2">
+          <div class="slick-item">
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+        </div>
+        </div>
+        <div class="element element-3">
+          <div class="slick-item">
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+        </div>
+        </div>
+        <div class="element element-4">
+          <div class="slick-item">
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+        </div>
+        </div>
+        <div class="element element-5">
+          <div class="slick-item">
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+        </div>
+        </div>
+        <div class="element element-6">
+          <div class="slick-item">
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+        </div>
+        </div>
+        <div class="element element-7">  <div class="slick-item">
+          <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+          <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+          <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+          <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+          <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+          <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+          <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+          <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+          <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+          <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+          <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+          <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+          <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+          <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+          <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+          <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+          <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+          <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+          <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+          <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+          <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+          <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+          <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+          <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+      </div></div>
+        <div class="element element-8">
+          <div class="slick-item">
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+            <div class="slick-item-img"><img src="./img/R.png"alt=""/></div>
+        </div>
+        </div>
+      
       </div>
-    </div>
-
+   
 
     </swiper-slide><!--index-->
 
@@ -283,7 +379,7 @@
              <div class="line-animation"></div>
             </div>
      </div>
-     
+    
      <div class="container-bot">
         <div class="report-container card">
             <ul>
@@ -819,9 +915,186 @@
       console.log(container)
       container.classlist.add("hehe")
     </script>
- 
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <script>
+  $(".slick-slider").slick({
+   slidesToShow: 1,
+   infinite:true,
+   slidesToScroll: 1,
+   autoplay: true,
+   autoplaySpeed: 2000,
+     dots: true, Boolean,
+     customPaging : function(slider, i) {
+        return `<p><i class="fa-solid fa-circle fa-2xs" style="color: #74C0FC;"></i></p>`;
+    },
+    arrows: true, Boolean,
+    dragganle:true,
+   prevArrow:`<button type='button' class='slick-prev pull-left'><i class="fa-solid fa-angle-left" style="color: #74C0FC;"></i></button>`,
+   nextArrow:`<button type="button" class="slick-next"><i class="fa-solid fa-angle-right" style="color: #74C0FC;"></i></button>`
+  });
+
+
+  </script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
   </body>
  
 </html>
+<!--
+ <div class="container">
+   
+        <div class="mySlickSlider">
+        <swiper-container
+        id="swiperz"
+          class="mySwiper"
+          pagination="true"
+          pagination-clickable="true"
+          navigation="true"
+          loop="true"
+          auto-height="true"
+          autoplay-delay="2500" autoplay-disable-on-interaction="false"
+          centered-slides="true"
+        >
+   <swiper-slide>
+            <div class="big-img">
+              <div class="slide-item"><img src="./img/R.png"alt=""/></div>
+              <div class="slide-item"><img src="./img/R.png"alt=""/></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+            </div>
+            <div style="width: 100%; height: 50px;" ></div>        
+          </swiper-slide>
+          <swiper-slide>
+            <div class="big-img">
+              <div class="slide-item"><img src="./img/R.png"alt=""/></div>
+              <div class="slide-item"><img src="./img/R.png"alt=""/></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+            </div>
+            <div style="width: 100%; height: 50px;" ></div>        
+          </swiper-slide>
+          <swiper-slide>
+            <div class="big-img">
+              <div class="slide-item"><img src="./img/R.png"alt=""/></div>
+              <div class="slide-item"><img src="./img/R.png"alt=""/></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
+            </div>
+            <div style="width: 100%; height: 50px;" ></div>        
+          </swiper-slide>
+  
+         
+  
+          </swiper-container>
+  
+        <button class="btn-prev">
+          <div
+            part="button-prev"
+            class="swiper-button-prev"
+            tabindex="0"
+            role="button"
+            aria-label="Previous slide"
+            aria-controls="swiper-wrapper-b20e6478102fa29ff"
+          >
+          </div>
+          
+        </button>
+  
+        <button class="btn-next">
+          <div
+            part="button-next"
+            class="swiper-button-next"
+            tabindex="0"
+            role="button"
+            aria-label="Next slide"
+            aria-controls="swiper-wrapper-a5a487f47f6532e1"
+          >
+            
+          
+          </div>
+        </button>
+      </div>
+      </div>
+ 
+-->

@@ -57,7 +57,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.getElementById('search-item').addEventListener('focus', function() {
-    document.getElementById('products').style.height = '800px'; 
+    document.getElementById('products').style.height = '800px';
+    document.getElementById('products').style.background = 'red';
 });
 
 document.getElementById('search-item').addEventListener('blur', function() {
