@@ -40,15 +40,17 @@
 </div>
 </header>
     <div class="FPT">
-       <div class="icon">
-        <img src="./img/Fpt-logo_transparent.png" alt="">
-       </div>
-       <div class="text">
-        <ul>
-            <li style="font-weight: bold; font-size: 13px;">FPT</li>
-            <li style="font-size: 10px; margin-top: 5px;">FPT - Công ty Cổ phần FPT</li>
-        </ul>
-       </div>
+<div class="headline">
+  <div class="icon">
+    <img src="./img/Fpt-logo_transparent.png" alt="">
+   </div>
+   <div class="text">
+    <ul>
+        <li style="font-weight: bold; font-size: 13px;">FPT</li>
+        <li style="font-size: 10px; margin-top: 5px;">FPT - Công ty Cổ phần FPT</li>
+    </ul>
+   </div>
+</div>
        <div class="search"> <input type="text" placeholder="Tìm theo mã chứng khoán hoặc tên doanh nghiệp"></div>
     </div>
 <div class="list">
@@ -644,19 +646,16 @@ Tòa nhà FPT, số 10 phố Phạm Văn Bạch, phường Dịch Vọng, quận
   <div class="main-home-right">
      <div class="item-4"> <!--Tin tức-->
           <div class="info_news-content">
-             <ul class="info_news_box">
-                 <li class="info_news_box_left" id="tintuc" onclick="OpenTab()">
-                  <span class="news_title">Tin tức</span>
-                 </li>
-                 <li class="info_news_box_right" id="bantin" onclick="OpenTab()">
-                  <span class="news_title" style="display: none">Bản tin</span>
-                 </li>
-             </ul>
+             <div class="info_news_box">
+                 <button class="info_news_box_left boxnews active" id="tintuc" onclick="OpenTab(even )">Tin tức</button>
+                 <button class="info_news_box_right boxnews" id="bantin" onclick="OpenTab(even)">Bản tin</button>
+             </div>
           </div>
-          <div class="show_news" id="tintuc-1">
+          <div class="show_news" >
                <div class="tab_news_details">
-                     <ul>
-                        <li class="boder-left-news">
+                <div class="tabcontent active" id="tab1">
+                     <ul >
+                        <li class="boder-left-news ">
                            <a href="" style="color: #333;" target="_blank">
                             <span>FPT: Báo cáo tình hình quản trị công ty 6 tháng đầu năm 2024</span>
                            </a>
@@ -705,28 +704,30 @@ Tòa nhà FPT, số 10 phố Phạm Văn Bạch, phường Dịch Vọng, quận
               
                     </li>
                      </ul>
-                     <ul style="display: none;">
+                </div>
+                <div class="tabcontent" id="tab2" >
+                     <ul>
                       <li class="boder-right-new">
                          <a href="" style="color: #333;" target="_blank">
-                          <span>FPT: Báo cáo tình hình quản trị công ty 6 tháng đầu năm 2024</span>
+                          <span style="color: red;">UXC: Báo cáo tài chính 6 tháng đầu năm 2024 đã kiểm toán</span>
                          </a>
                          <p>01/08/2024 08:35</p>
                       </li>
                       <li class="boder-left-news">
                         <a href="" style="color: #333;" target="_blank">
-                         <span>FPT: Danh sách người lao động tham gia mua ESOP 2024</span>
+                         <span>UXC: Báo cáo tình hình quản trị Công ty 6 tháng đầu năm 2024</span>
                         </a>
                         <p>01/08/2024 08:35</p>
                      </li>
                      <li class="boder-left-news">
                       <a href="" style="color: #333;" target="_blank">
-                       <span>FPT: Nghị quyết HĐQT số 02.07-2024 ngày 26/07/2024</span>
+                       <span>UXC: Báo cáo tài chính quí 2 năm 2024</span>
                       </a>
                       <p>01/08/2024 08:35</p>
                    </li>
                      <li class="boder-left-news">
                     <a href="" style="color: #333;" target="_blank">
-                     <span>FPT: Thông báo về việc niêm yết và giao dịch cổ phiếu thay đổi niêm yết</span>
+                     <span>UXC: Dự thảo Tài liệu Đại hội đồng Cổ đông thường niên 2024</span>
                     </a>
                     <p>01/08/2024 08:35</p>
                      </li>
@@ -758,7 +759,7 @@ Tòa nhà FPT, số 10 phố Phạm Văn Bạch, phường Dịch Vọng, quận
                </div>
           </div>
      </div>
-
+    </div>
   <div class="item-5"> <!--THÔNG TIN NIÊM YẾT-->
     <h4>THÔNG TIN NIÊM YẾT</h4>
       <div class="listing-info">
@@ -811,7 +812,27 @@ Tòa nhà FPT, số 10 phố Phạm Văn Bạch, phường Dịch Vọng, quận
     </div>
      </div>
     </div>
-   
+  <script>
+      const $ =document.querySelector.bind(document)
+      const $$ = document.querySelectorAll.bind(document)
+
+      const tabs= $$('.boxnews')
+      const panes = $$('.tabcontent')
+
+      tabs.forEach((tab, index) => 
+    {
+      const pane = panes[index]
+      tab.onclick=function()
+      {
+        console.log(pane)
+        $('.boxnews.active').classList.remove('active')
+        $('.tabcontent.active').classList.remove('active')
+
+        this.classList.add('active')
+        pane.classList.add('active')
+      }
+    })
+  </script>
 </body>
 </html>
 <footer>
@@ -838,7 +859,6 @@ Tòa nhà FPT, số 10 phố Phạm Văn Bạch, phường Dịch Vọng, quận
   </div> 
   
 </footer>
-
 
 
 
