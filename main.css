@@ -1,3 +1,30 @@
+@media screen and (max-width: 1920px) 
+{
+    .search-container
+    {
+        padding: 0 85px;
+    }
+    .slick-slder
+    {
+        transform: translate(85px, 25px);
+    }
+    .slick-item
+    {
+        transform: translateX(35px);
+    }
+    .slick-dots
+    {
+        transform: translateY(55px);
+    }
+   
+}
+@media screen and (max-width: 1600px)
+{
+    .search-container
+    {
+        padding: 0 30px;
+    }
+} 
 @media screen and (max-width: 1200px) {
     .box-info {
         height: auto;
@@ -48,6 +75,8 @@
     .slick-slider
     {
         transform: translate(-102px);
+        margin: 20px 20px;
+        padding: 50px 0;
     }
     .slick-item
     {
@@ -150,7 +179,7 @@
 .column
 {
     margin-left: 55px;
-    margin-right: 80px;
+    margin-right: 110px;
 }
 .column h2 {
     color: #0073e6;
