@@ -103,7 +103,7 @@ main h2
         display: flex;
         margin-top: 30px;
         justify-content: space-evenly;
-        height: 500px;
+        height: 450px;
 }
 .Ezir-container
 {
@@ -231,7 +231,7 @@ main h2
 {
     display: flex;
    justify-content: space-evenly;
-  margin: -300px 0;
+  margin: -200px 0;
   
     
 }
