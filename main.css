@@ -43,8 +43,16 @@
         text-align: center;
        
     }
-}
 
+}
+@media screen and (max-width: 1360px)
+{
+    .clr
+{
+ 
+    transform: translateX(30px);
+}
+}
 @media screen and (max-width: 768px) {
     .main-container {
         padding-right: 70px;
