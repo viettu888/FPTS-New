@@ -2,7 +2,7 @@
 {
     .search-container
     {
-        padding: 0 85px;
+        padding: 0 55px;
     }
     .slick-slder
     {
@@ -14,8 +14,20 @@
     }
     .slick-dots
     {
-        transform: translateY(55px);
+        top: 190px;
     }
+    .line-model-view
+    {
+        margin: 50px;
+    }
+    .container-model
+     {
+        transform: translateX(55px);
+     }
+     .moder-footer button
+     {
+        margin: 20px 135px;
+     }
    
 }
 @media screen and (max-width: 1600px)
@@ -88,7 +100,10 @@
     }
     .slick-item
     {
-        margin-top: 65px;
+        margin-top: 10px;
+    }
+    .slick-dots{
+        top: 120px;
     }
 }
 
@@ -310,7 +325,7 @@
     background-size: cover;
     width: 95%;
     height: 100%;
-    margin: 10px 25px;
+   
   }
   .fa-circle
   {
