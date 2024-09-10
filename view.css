@@ -1,3 +1,18 @@
+@media screen and (min-width:1680px) {
+    .line-model-view
+    {
+        margin: 100px 0px 0px 90px;
+
+    }
+    .container-model
+     {
+        transform: translateX(100px);
+     }
+     .moder-footer button
+     {
+        margin: 80px 280px;
+     }
+}
 @media screen and (max-width: 1200px) {
    .upview{
         width: 90%;
@@ -233,7 +248,7 @@
   color: #187cad;
   border: 1px solid #187cad;
   border-radius: 25px;
-  transform: translate(430px, 0px);
+  transform: translate(300px, -20px);
 }
 .moder-footer
 {
@@ -283,7 +298,7 @@ li{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     width: 75%;
     align-items: center;
-    transform: translate(175px, 72px);
+    transform: translate(130px, 20px);
 }
 
 .container-model
@@ -292,7 +307,8 @@ li{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin: 100px 175px;
+    margin: 60px 120px;
+
     justify-content: space-between;
 }
 .contact-model
