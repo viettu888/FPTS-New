@@ -1,110 +1,94 @@
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 75em) {
     .containerx, .container-bot {
         transform: translateY(-45px);
     }
 }
 
-@media screen and (max-width: 768px) {
-    main {
-        margin-top: 70px;
-        padding: 20px;
-    }
+@media screen and (max-width: 48em ) {
+
     .container-bot
     {
         flex-direction: column;
         align-items: center;
-        transform: translate(0px, 150px);
+        transform: translate(0px, -125px);
+        height: 389px !important;
+    }
+    .report-container
+    {   margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     .containerx {
         flex-direction: column;
         align-items: center;
-        transform: translateY(-50px);
-       
+        height: 600px !important;
+        transform: translateY(-80px);
     }
     
-    .Ezir-container, .EzGsm-container, .Ir-container, .report-container, .Charter-container {
-        width: 80%;
-        max-width: none;
-        margin: 15px;
-    }
-   
 }
 
-@media screen and (max-width: 480px) {
-    main {
-        margin-top: 50px;
-    }
-    
-    .Ezir-container, .EzGsm-container, .Ir-container
-    {
-        height: 250px;
-    }
-    .Ezir-container, .EzGsm-container, .Ir-container, .report-container, .Charter-container {
-        width: 90%;
-        margin: 0px 0px 40px 0px;
-    }
+@media screen and (max-width: 30em) {
     .containerx button, .container-bot button {
         width: 80px;
         font-size: 10px;
+        
     }
-    .container-bot
-    {
-        flex-direction: column;
-        align-items: center;
-        transform: translate(0px, 150px);
-    }
-    main
-    {
-        height: 100%;
-    }
+
 }
 main {
     font-family: Arial, sans-serif;
     background-color: #f9fafb;
     color: #333;
 }
-html,
-    main {
-    
+html{
       height: 100%;
     }
-
-main {
-      
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
-      margin: 0;
-      padding: 0;
-}
 main
 {
     width: 100%;
     height: 100%;
-    margin-top: 85px;
     background:url(./ggg.jpg);
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
     overflow: hidden;
     overflow-y: scroll;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
 }
-main h2
+main::-webkit-scrollbar
 {
+    width: 10px;
+}
+main::-webkit-scrollbar-thumb
+{
+    background-color: #8bc3e9;
+    border-radius: 25px; 
+    border: 2px solid #ffffff;
+    cursor: pointer;
+}
+.text_top_title h2
+{
+    justify-content: center;
     align-items: center;
     text-align: center;
     color: #187cad;
-    padding-bottom: 50px;
+    width: 100%;
+    height: 20%;
+    margin: 75px 0;
     
+}
+#tuvan
+{
+    height: 100%;
+    overflow: hidden;
 }
 .containerx
 {
         width: 100%;
         display: flex;
-        margin-top: 30px;
         justify-content: space-evenly;
-        height: 450px;
+        height: 40%;
+        align-items: center;
 }
 .Ezir-container
 {
@@ -231,10 +215,9 @@ main h2
 .container-bot
 {
     display: flex;
-   justify-content: space-evenly;
-  margin: -200px 0;
-  
-    
+    justify-content: space-evenly;
+    height: 30%;
+    align-items: center;
 }
 .report-container
 {
@@ -291,7 +274,7 @@ main h2
     border-radius: 25px;
     width: 250px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: 160px; 
+    height: 130px; 
    
 }
 .Charter-container p
