@@ -18,6 +18,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
     <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.7/dist/autoComplete.min.js"></script>
@@ -45,16 +48,14 @@
     <script src="./myscripts.js"></script>
     <script src="./app.js"></script>
     <script src="./slider.js"></script>
-    <style>
-      html
-      {
-        scroll-behavior: smooth;
-      }
-    </style>
-    <header>
-      <div class=" flex-center">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" ></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <header >
+      <div class="header-boss">
+      <div class="flex-center">
         <div class="logo"> <a href="">
-          
           <img src="./img/logo_ngang.png" alt="FPT Securities" /></a>
         </div>
         <div class="menu">
@@ -64,9 +65,29 @@
             <li> <a  style="text-decoration: none;" href="#tuvan">Tư vấn</a></li>
             <li> <a  style="text-decoration: none;" href="#lienhe">Liên hệ</a></li>
           </ul>
-        </div>
+
+        </div> 
       </div>
-    
+      <div class="content-mobile">
+        <div class="mobile-left">
+          <label  for="mobile-nav-input"  class="nav-bar">
+            <i class="fa-solid fa-bars" ></i>
+            <input  type="checkbox" hidden name="" class="nav-input" id="mobile-nav-input">
+            <label for="mobile-nav-input" class="overley"></label>
+             <div class="nav-mobile">
+                <ul class="nav-list-mb">
+                  <li class="nav-menu-mb"> <a style="text-decoration: none;" href="#trangchu">Trang chủ</a></li>
+                  <li class="nav-menu-mb"> <a style="text-decoration: none; " href="">Thông tin công bố</a></li>
+                  <li class="nav-menu-mb"> <a style="text-decoration: none;" href="#tuvan">Tư vấn</a></li>
+                  <li class="nav-menu-mb"> <a style="text-decoration: none;" href="#lienhe">Liên hệ</a></li>
+                </ul>
+            </div>
+          </label > 
+          <div id="content_mb_top" style="color: #4f4f4f;">Ez<span class="content_mb_top_1">IR</span></div>
+        </div>
+        <div class="icon-mobile"><img src="./img/logo_ngang.png" alt=""></div>
+    </div>
+  </div>
     </header>
    
     <!------------------------>
@@ -78,14 +99,15 @@
     <swiper-slide id="trangchu" >  
         <!--index-->
       
-      <div class="container content">
+      <div class="container-content">
         <div class="search-container">
           <h1>Ez<span>IR</span></h1>
-          <p>THÔNG TIN DOANH NGHIỆP</p>
+         <div> <p class="TT-CH">THÔNG TIN DOANH NGHIỆP</p>
           <p class="ch">
             
             CƠ HỘI ĐẦU TƯ
           </p>
+        </div>
         </div>
         <form class="search-form "   >
           <div class="search-box"  >
@@ -105,7 +127,7 @@
               <div id="suggestions-container" class="suggestions-box"></div>
               </div>
             </form>
-          </div>
+          
        
       
       <div class="content-omega">
@@ -117,7 +139,9 @@
                   <li class="omega-z">Trực tiếp chọn doanh nghiệp bên dưới</li>
                  </ul>
       </div>
-      
+    </div>
+     <div class="sliderxyz">
+
       <div class="slick-slider">
         <div class="element element-1">
           <div class="slick-item">
@@ -344,13 +368,89 @@
       
       </div>
    
+     </div>
+
+    <div class="wrapper">
+      <div class="owl-carousel owl-theme">
+        <div class="show-item">
+            <img src="./img/OIP (1).jfif" alt="">
+            <img src="./img/OIP (1).jfif" alt="">
+            <img src="./img/OIP (1).jfif" alt="">
+            <img src="./img/OIP (1).jfif" alt="">
+            <img src="./img/OIP (1).jfif" alt="">
+            <img src="./img/OIP (1).jfif" alt="">
+            <img src="./img/OIP (1).jfif" alt="">
+            <img src="./img/OIP (1).jfif" alt="">
+        </div>
+        <div class="show-item">
+          <img src="./img/OIP (1).jfif" alt="">
+          <img src="./img/OIP (1).jfif" alt="">
+          <img src="./img/OIP (1).jfif" alt="">
+          <img src="./img/OIP (1).jfif" alt="">
+          <img src="./img/OIP (1).jfif" alt="">
+          <img src="./img/OIP (1).jfif" alt="">
+          <img src="./img/OIP (1).jfif" alt="">
+          <img src="./img/OIP (1).jfif" alt="">
+        </div>
+        <div class="show-item">
+          <img src="./img/OIP (1).jfif" alt="">
+          <img src="./img/OIP (1).jfif" alt="">
+          <img src="./img/OIP (1).jfif" alt="">
+          <img src="./img/OIP (1).jfif" alt="">
+          <img src="./img/OIP (1).jfif" alt="">
+          <img src="./img/OIP (1).jfif" alt="">
+          <img src="./img/OIP (1).jfif" alt="">
+          <img src="./img/OIP (1).jfif" alt="">
+        </div>
+        <div class="show-item">
+          <img src="./img/OIP (1).jfif" alt="">
+          <img src="./img/OIP (1).jfif" alt="">
+          <img src="./img/OIP (1).jfif" alt="">
+          <img src="./img/OIP (1).jfif" alt="">
+          <img src="./img/OIP (1).jfif" alt="">
+          <img src="./img/OIP (1).jfif" alt="">
+          <img src="./img/OIP (1).jfif" alt="">
+          <img src="./img/OIP (1).jfif" alt="">
+        </div>
+        <div class="show-item">
+          <img src="./img/OIP (1).jfif" alt="">
+            <img src="./img/OIP (1).jfif" alt="">
+            <img src="./img/OIP (1).jfif" alt="">
+            <img src="./img/OIP (1).jfif" alt="">
+            <img src="./img/OIP (1).jfif" alt="">
+            <img src="./img/OIP (1).jfif" alt="">
+            <img src="./img/OIP (1).jfif" alt="">
+            <img src="./img/OIP (1).jfif" alt="">
+        </div>
+        <div class="show-item">
+          <img src="./img/OIP (1).jfif" alt="">
+          <img src="./img/OIP (1).jfif" alt="">
+          <img src="./img/OIP (1).jfif" alt="">
+          <img src="./img/OIP (1).jfif" alt="">
+          <img src="./img/OIP (1).jfif" alt="">
+          <img src="./img/OIP (1).jfif" alt="">
+          <img src="./img/OIP (1).jfif" alt="">
+          <img src="./img/OIP (1).jfif" alt="">
+        </div>
+        <div class="show-item">
+          <img src="./img/OIP (1).jfif" alt="">
+            <img src="./img/OIP (1).jfif" alt="">
+            <img src="./img/OIP (1).jfif" alt="">
+            <img src="./img/OIP (1).jfif" alt="">
+            <img src="./img/OIP (1).jfif" alt="">
+            <img src="./img/OIP (1).jfif" alt="">
+            <img src="./img/OIP (1).jfif" alt="">
+            <img src="./img/OIP (1).jfif" alt="">
+        </div>
+    </div>
+    </div>
 
     </swiper-slide><!--index-->
 
 
     <swiper-slide id="tuvan"  > <!--Tu van-->
       <main >
-        <h2>Tư Vấn Quản Trị Doanh Nghiệp</h2>
+     <div class="text_top_title"> <h2>Tư Vấn Quản Trị Doanh Nghiệp</h2></div>
      <div class="containerx">
         <div class="Ezir-container card">
          <ul>
@@ -431,7 +531,7 @@
       </div>
       <footer>
         <div class="container-foot">
-            <div class="column">
+            <div class="column info_colum1">
                 <h2>KHỐI TƯ VẤN TÀI CHÍNH DOANH NGHIỆP</h2>
                 <div class="contact-info">
                   <div id="imghh"><i class="fa-solid fa-location-dot"></i></div>
@@ -446,7 +546,7 @@
                     <span><a href="mailto:ezir@fots.com.vn">ezir@fpts.com.vn</a></span>
                 </div>
             </div>
-            <div class="column">
+            <div class="column info_colum2">
                 <h2>PHÒNG TƯ VẤN TÀI CHÍNH DOANH NGHIỆP</h2>
                 <div class="contact-info">
                   <div id="imghh"><i class="fa-solid fa-location-dot"></i></div>
@@ -498,9 +598,8 @@
       <div class="moder-footer">
           <button class="moder-close">Đóng</button>
       </div>
-  </div>
-    <div class="line-model-view">
-  </div>
+    </div>
+    <div class="line-model-view"></div>
   
     <div class="container-model">
         <div class="column-model1">
@@ -934,6 +1033,7 @@
     });
   </script>
   <script>
+    /*slick-slider*/
   $(".slick-slider").slick({
    slidesToShow: 1,
    infinite:true,
@@ -949,152 +1049,31 @@
    prevArrow:`<button type='button' class='slick-prev pull-left'><i class="fa-solid fa-angle-left" style="color: #74C0FC;"></i></button>`,
    nextArrow:`<button type="button" class="slick-next"><i class="fa-solid fa-angle-right" style="color: #74C0FC;"></i></button>`
   });
-
-
+/* owl-carousel*/
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    autoplay:true,
+    dots: false,
+    mouseDrag:true,
+    autoplayHoverPause:true,
+    autoplayTimeout:3000,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
   </script>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+   
   </body>
  
 </html>
-<!--
- <div class="container">
-   
-        <div class="mySlickSlider">
-        <swiper-container
-        id="swiperz"
-          class="mySwiper"
-          pagination="true"
-          pagination-clickable="true"
-          navigation="true"
-          loop="true"
-          auto-height="true"
-          autoplay-delay="2500" autoplay-disable-on-interaction="false"
-          centered-slides="true"
-        >
-   <swiper-slide>
-            <div class="big-img">
-              <div class="slide-item"><img src="./img/R.png"alt=""/></div>
-              <div class="slide-item"><img src="./img/R.png"alt=""/></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-            </div>
-            <div style="width: 100%; height: 50px;" ></div>        
-          </swiper-slide>
-          <swiper-slide>
-            <div class="big-img">
-              <div class="slide-item"><img src="./img/R.png"alt=""/></div>
-              <div class="slide-item"><img src="./img/R.png"alt=""/></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-            </div>
-            <div style="width: 100%; height: 50px;" ></div>        
-          </swiper-slide>
-          <swiper-slide>
-            <div class="big-img">
-              <div class="slide-item"><img src="./img/R.png"alt=""/></div>
-              <div class="slide-item"><img src="./img/R.png"alt=""/></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-              <div class="slide-item"><img src="./img/OIP (1).jfif"></div>
-            </div>
-            <div style="width: 100%; height: 50px;" ></div>        
-          </swiper-slide>
-  
-         
-  
-          </swiper-container>
-  
-        <button class="btn-prev">
-          <div
-            part="button-prev"
-            class="swiper-button-prev"
-            tabindex="0"
-            role="button"
-            aria-label="Previous slide"
-            aria-controls="swiper-wrapper-b20e6478102fa29ff"
-          >
-          </div>
-          
-        </button>
-  
-        <button class="btn-next">
-          <div
-            part="button-next"
-            class="swiper-button-next"
-            tabindex="0"
-            role="button"
-            aria-label="Next slide"
-            aria-controls="swiper-wrapper-a5a487f47f6532e1"
-          >
-            
-          
-          </div>
-        </button>
-      </div>
-      </div>
- 
--->
