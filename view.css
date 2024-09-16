@@ -1,16 +1,16 @@
 @media screen and (min-width:1680px) {
     .line-model-view
     {
-        margin: 100px 0px 0px 90px;
+        margin: 45px 0px 0px 45px;
 
     }
-    .container-model
+    .moder-footer button
+    {
+       margin: 20px 135px;
+    }
+     .container-model
      {
-        transform: translateX(100px);
-     }
-     .moder-footer button
-     {
-        margin: 80px 280px;
+        transform: translate(85px, -60px);
      }
 }
 @media screen and (max-width: 1200px) {
@@ -23,12 +23,6 @@
     .moder-body {
         max-height: 50%;
     }
-
-    .container-model {
-        flex-direction: column;
-        padding: 10px;
-    }
-
     .img-IR {
         max-width: 100%;
         width: 90%;
@@ -39,7 +33,7 @@
     .moder-inner, .moder-innerno2, .moder-innerno3, .moder-innerno4,
 .moder-innerno5, .moder-innerno6{
         width: 95%;
-        height: auto;
+        height: 60%;
     }
 
     .moder-body {
@@ -53,16 +47,6 @@
     .moder-header {
         font-size: 18px;
     }
-
-    .container-model .column-model2 {
-        transform: translate(0px, 100px);
-    }
-    .container-model .column-model1
-    {
-        margin-top: -23x;
-        margin-left: 7px;
-    }
-
     .moder-footer button {
         width: 80px;
         height: 30px;
@@ -78,8 +62,7 @@
     }
     .line-model-view
     {
-        margin-top: 75px;
-        margin-left: -115px;
+       display: none;
     }
     .moder-header, .moder-headerno2, .moder-headerno3, .moder-headerno4, 
     .moder-headerno5, .moder-headerno6 h3
@@ -89,6 +72,18 @@
     .fa-xmark 
     {
         transform: translateX(20px);
+    }
+     .container-model > .column-model1 > h2
+    {
+        font-size: 15px;
+    }
+    .container-model > .column-model2 > h2
+    {
+        font-size: 15px;
+    }
+    .container-model
+    {
+        transform: translate(-20px, 80px);
     }
 }
 
@@ -117,18 +112,9 @@
         right: 10px;
         top: 10px;
     }
-
-    .container-model {
-        
-        margin: 10px -13px;
-    }
-
-    .column-model1, .column-model2 {
-        margin: -45px -20px;
-    }
     .column-model1, .column-model2 .contact-model
     {
-        font-size: 10px;
+        font-size: 15px;
     }
     .moder-footer button {
         width: 70px;
@@ -172,7 +158,7 @@
 {
     display: flex;
     width: 100% ;
-    height: 60px;
+    height: 20%;
     font-weight: bold;
     color: #187cad;
     justify-content: center;
@@ -201,7 +187,7 @@
 .moder-body
 {
     width: 90%;
-    height: 250px;
+    height: 60%;
     list-style: none;
     margin: 20px 40px;
     overflow: hidden;
@@ -248,12 +234,12 @@
   color: #187cad;
   border: 1px solid #187cad;
   border-radius: 25px;
-  transform: translate(300px, -20px);
+  transform: translate(425px, 0px);
 }
 .moder-footer
 {
     
-    height: 50px;
+    height: 20%;
 }
 .moder-footer:hover button
 {
@@ -298,18 +284,18 @@ li{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     width: 75%;
     align-items: center;
-    transform: translate(130px, 20px);
+    transform: translate(180px, 75px);
 }
 
 .container-model
 {
-    width: 75%;
+    width: 100%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin: 60px 120px;
-
-    justify-content: space-between;
+    margin: 35px 20px;
+    height: 40%;
+    justify-content: space-around;
 }
 .contact-model
 {
