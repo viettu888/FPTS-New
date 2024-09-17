@@ -55,14 +55,31 @@ document.addEventListener('DOMContentLoaded', () => {
           });
       });
 });
+function handleInput() {
+    const searchItem = document.getElementById('search-item');
+    if (searchItem.value.length > 0) {
+        searchItem.classList.add('has-content'); 
+    } else {
+        searchItem.classList.remove('has-content'); 
+}
 
-document.getElementById('search-item').addEventListener('focus', function() {
-    document.getElementById('products').style.height = '800px';
-    document.getElementById('products').style.background = 'red';
-});
+function shrinkInput() {
+    const searchItem = document.getElementById('search-item');
+  
+    searchItem.classList.remove('has-content');
+}
 
-document.getElementById('search-item').addEventListener('blur', function() {
-    document.getElementById('products').style.height = '50px'; 
-});
+function expandInput() {
+  
+}}
+
+function hideProducts() {
+    const searchItem = document.getElementById('search-item');
+    const productsDiv = document.getElementById('products');
+    if (searchItem.value === '') {
+        productsDiv.style.display = 'none';
+    }
+}
+
 
 /*-------------------*/
