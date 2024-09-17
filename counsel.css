@@ -9,7 +9,7 @@
     .container-bot
     {
         flex-direction: column;
-        align-items: center;
+        align-items: center !important;
         transform: translate(0px, -125px);
         height: 389px !important;
     }
@@ -20,9 +20,10 @@
 
     .containerx {
         flex-direction: column;
-        align-items: center;
+        align-items: center !important;
         height: 600px !important;
         transform: translateY(-80px);
+
     }
     
 }
@@ -84,11 +85,11 @@ main::-webkit-scrollbar-thumb
 }
 .containerx
 {
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        height: 40%;
-        align-items: center;
+     width: 100%;
+     display: flex;
+     justify-content: space-evenly;
+     height: 30%;
+     align-items: end;
 }
 .Ezir-container
 {
@@ -97,7 +98,7 @@ main::-webkit-scrollbar-thumb
     width: 250px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     height: 130px; 
-    
+    overflow: hidden;
     
 }
 .Ezir-container ul
@@ -155,6 +156,7 @@ main::-webkit-scrollbar-thumb
     width: 250px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     height: 130px; 
+    overflow: hidden;
     
 }
 .EzGsm-container ul
@@ -182,7 +184,8 @@ main::-webkit-scrollbar-thumb
     width: 250px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     height: 130px; 
-    
+    overflow: hidden;
+    transition-duration: 0;
 }
 .Ir-container p
 {
@@ -217,7 +220,7 @@ main::-webkit-scrollbar-thumb
     display: flex;
     justify-content: space-evenly;
     height: 30%;
-    align-items: center;
+    align-items: end;
 }
 .report-container
 {
@@ -226,7 +229,8 @@ main::-webkit-scrollbar-thumb
     width: 250px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     height: 130px; 
-    
+    overflow: hidden;
+    transition-duration: 0;
 }
 .report-container p
 {
@@ -275,7 +279,8 @@ main::-webkit-scrollbar-thumb
     width: 250px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     height: 130px; 
-   
+    overflow: hidden;
+    
 }
 .Charter-container p
 {
@@ -317,7 +322,7 @@ main::-webkit-scrollbar-thumb
 }
 .containerx div, .container-bot div {
     position: relative;
-     overflow: hidden;
+    overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .details-button
@@ -326,14 +331,27 @@ main::-webkit-scrollbar-thumb
     opacity: 0;
     transition: transform 0.9s ease;
 }
+.card
+{
+    position: relative;
+    height: 130px;
+    transition: height 0.3s ease, box-shadow 0.3s ease, outline 0.3s ease;
+    overflow: hidden;
+}
+.card .bottom-fixed {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
 .card:hover {
-    
     outline: 1px solid #0b75f0;
     outline-offset: 6px;
-    height: 150px;
-    transform: translateY(-30px);
-    transition: 0.8s;
+    height: 155px;
+    transition: height 0.8s ease-out, box-shadow 0.3s ease-out;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
 }
 .card:hover .details-button, .card:hover .line-animation {
     transform: none;
@@ -370,6 +388,7 @@ main::-webkit-scrollbar-thumb
 .report-container:hover
 {
     height: 165px;
+
 }
 .report-container:hover .li1
 {
