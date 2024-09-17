@@ -17,7 +17,7 @@
     }
     .omega-bottom li
     {
-        font-size: 20px;
+        font-size: 15px;
     }
     .menu ul {
         flex-direction: column;
@@ -203,8 +203,9 @@ swiper-container {
 {
      .fa-bars
        {
-         font-size: 35px;
+         font-size: 30px;
          color: #4f4f4f;
+         align-items: end;
        }
 }
 .nav-mobile
