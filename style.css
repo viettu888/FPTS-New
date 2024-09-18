@@ -67,7 +67,8 @@
     .mobile-left > #content_mb_top
     {
         display: block;
-        margin: 0 20px;
+        margin: 5px 20px;
+        font-family: "PT Sans", sans-serif;
     }
     .content-mobile > .icon-mobile img 
     {
@@ -197,8 +198,8 @@ swiper-container {
 #content_mb_top
 {
   
-    font-size: 35px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 550;
     font-style: italic;
     .content_mb_top_1
     {
@@ -209,8 +210,8 @@ swiper-container {
 {
      .fa-bars
        {
-         font-size: 30px;
-         color: #4f4f4f;
+         font-size: 25px;
+         color: #686666;
          align-items: end;
          margin-top: 8px;
        }
@@ -238,7 +239,7 @@ swiper-container {
 }
 .nav-list-mb
 {
-  margin: 50px 35px;
+    margin: 50px 25px;
   text-align: center;
 
 }
@@ -250,18 +251,18 @@ swiper-container {
     text-decoration: none;
     font-size: 1.3rem;
     list-style: none;
-    padding: 15px;
     border-bottom: 1px solid #666;
-    
+    margin: 0 -10px;
+    padding: 20px;
 }
 .nav-menu-mb > a 
 {
+    position: fixed;
     font-family: "SUSE", sans-serif;
     color: #666;
     font-weight: 10;
     line-height: 1.5;
     margin-left: -20px;
-
 }
 .nav-menu-mb:hover a
 {
@@ -274,8 +275,8 @@ swiper-container {
 }
 .icon-mobile img
 {
-    width: 122px;
-    height: 35px;
+    width: 100px;
+    height: 28px;
    display: none;
 }
 .nav-bar:hover .fa-bars
