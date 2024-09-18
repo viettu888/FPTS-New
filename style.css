@@ -9,22 +9,31 @@
     }
     .content-omega
     {
-        margin-top: 50px;
+        margin-top: 165px !important;
     }
     .omega-top p
     {
-        font-size: 20px;
-    }
-    .omega-bottom li
-    {
         font-size: 15px;
+    }
+    .omega-bottom 
+    {
+        margin-left: -25px;
+       li
+          {
+        font-size: 15px;
+        color: #7ca1f1;
+      
+          }
     }
     .menu ul {
         flex-direction: column;
         margin-left: 20px;
     }
+   
     .search-container 
+       
         {
+
             h1
         { 
             display: none;
@@ -37,6 +46,7 @@
         }
     .search-container
     {
+        transform: translateY(50px);
         width: 100%;
     }
     .search-box input {
@@ -44,15 +54,11 @@
     }
 
     .search-box > button {
-        right: 30px;
+        display: none;
     }
     .container
     {
        margin-top: 80px;
-    }
-    .search-box button
-    {
-        margin-top: 0;
     }
     .content-mobile > .nav-bar
     {
@@ -206,15 +212,16 @@ swiper-container {
          font-size: 30px;
          color: #4f4f4f;
          align-items: end;
+         margin-top: 8px;
        }
 }
 .nav-mobile
 {
   position: fixed;
-  top: 50px;
+  top: 0;
   bottom: 0;
   left: 0;
-  width: 70%;
+  width: 65%;
   background: #fff;
   transform: translateX(-100%);
   opacity: 0;
@@ -231,21 +238,30 @@ swiper-container {
 }
 .nav-list-mb
 {
+  margin: 50px 35px;
   text-align: center;
+
 }
 .nav-menu-mb
 {
     width: 100%;
-    height: 50px;
-    text-align: center;
+    height: 70px;
+    text-align: left;
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     list-style: none;
-    padding: 10px;
+    padding: 20px;
+    border-bottom: 1px solid #666;
+    
 }
 .nav-menu-mb > a 
 {
-    color: #337ab7;
+    font-family: "SUSE", sans-serif;
+    color: #666;
+    font-weight: 10;
+    line-height: 1.5;
+    margin-left: -20px;
+
 }
 .nav-menu-mb:hover a
 {
@@ -253,7 +269,8 @@ swiper-container {
 }
 .nav-menu-mb:hover
 {
-        background: rgba(124, 181, 255, 0.8);
+    background: rgba(124, 181, 255, 0.8);
+    
 }
 .icon-mobile img
 {
@@ -286,94 +303,7 @@ swiper-container {
     align-items: center;
     display: none;
 }
-/*
-.mySwiper {
-    overflow: initial;
-    z-index: 10;
-   
-}
-.swiper-horizontal
-{
- background: red;
- height: 500px;
-  
-}
-.big-img {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 20px;
-    text-align: center;
-    font-size: 25px;
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-    grid-template-rows: repeat(2, minmax(0, 1fr));
-    background-size: cover;
-    width: 80%;
-    height: 160px;
-    transform: translate(140px, 0px);
-}
 
-.big-img img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-swiper-container {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-swiper-container::part(button-next) {
-    width: 250px;
-    height: 25px;
-    top: 40%;
-    right: -30px;
- 
-}
-
-swiper-container::part(button-prev) {
-    
-    width: 250px;
-    height: 25px;
-    top: 40%;
-    left: -30px;
-}
-
-swiper-container::part(pagination) 
-{
-    
-    text-align: center; 
-    transform: translate3d(0px, 0px, 0px);
-    z-index: 10;
-
-}
-.horizontalClass
-{
-    background: rebeccapurple;
-}
-.btn-next {
-    position: absolute;
-    top: 35%;
-    right: 70px;
-    display: none;
-   
-}
-.btn-prev {
-    position: absolute;
-    top: 35%;
-    left: 70px;
-    display: none;
-}
-.slide-item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 4px 7px;
-}
-
-*/
 .flex-center{
     display: flex;
     align-items: center;
@@ -477,14 +407,16 @@ swiper-container::part(pagination)
     height: auto;
     
 }
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
 .search-box
 {
         position: relative;
         width: 85%;
         margin:0 auto;
-        justify-content: center;
-       
-        
+        justify-content: center;   
 }
 
 .products-info 
@@ -579,6 +511,7 @@ swiper-container::part(pagination)
     text-align: center;
     transition: opacity 0.3s;
     transform: translate3d(0px, 0px, 0px);
+    color: #000;
 
 }
 swiper-container
