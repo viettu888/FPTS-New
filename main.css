@@ -157,7 +157,7 @@
     justify-content: space-between ;
     font-size: 18px;
     flex-wrap: wrap;
-    transform: translateX(100px);
+    transform: translate(100px, -40px);
 }
 .column h2 {
     color: #0073e6;
