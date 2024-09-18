@@ -253,7 +253,8 @@ swiper-container {
     list-style: none;
     border-bottom: 1px solid #666;
     margin: 0 -10px;
-    padding: 20px;
+    padding: 22px;
+
 }
 .nav-menu-mb > a 
 {
@@ -263,6 +264,7 @@ swiper-container {
     font-weight: 10;
     line-height: 1.5;
     margin-left: -20px;
+    font-size: 17px;
 }
 .nav-menu-mb:hover a
 {
