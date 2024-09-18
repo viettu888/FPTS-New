@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="Search.css" />
     <link rel="stylesheet" href=
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.css">
-    
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
    <link rel="shortcut icon" type="image/png" href="./Project- FE/Image/logo_doc.png"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module">
@@ -28,7 +29,7 @@
   
   <div class="container" >
     
-    <div class="search-container">
+    <div class="search-container" >
      
         <h1 > <a href="./index.html" style="text-decoration: none;"> Ez<span>IR</span> </a></h1>
         <p>Thông tin doanh nghiệp - cơ hội đầu tư</p>
@@ -73,6 +74,42 @@
         <li> <a href="">Cơ cấu sở hữu</a></li>
        </ul>
     </div>
+</div>
+<div class="head_content">
+   <div class="head_content_top" >
+     <div class="content_title">
+        <div class="content_icon" style="font-weight: bold; font-size: 13px;" >
+          <img src="./img/Fpt-logo_transparent.png" alt="">
+        </div>
+        <div class="content_text" >
+          <ul>
+            <li style="font-weight: bold; font-size: 18px;">FPT</li>
+            <li style="font-size: 15px; margin-top: 5px;">FPT - Công ty Cổ phần FPT</li>
+        </ul>
+        </div>
+     </div>
+     <div class="content_bars">
+      <label for="mobile-nav-input" class="moblie-bars">
+        <i class="fa-solid fa-bars"></i>
+        <input  type="checkbox" hidden name="" class="mobile-input" id="mobile-nav-input">
+        <label for="mobile-nav-input" class="overley"></label>
+        <div class="menu-bars">
+           <ul class="list-menu">
+            <li  class="list-menu-mb" style="list-style: none "></li> <a >Tổng quan</a> </li>
+            <li class="list-menu-mb " style="list-style: none "></li><a >Kinh doanh</a></li>
+            <li class="list-menu-mb " style="list-style: none "></li><a >Tài chính</a></li>
+            <li class="list-menu-mb " style="list-style: none "></li><a >Cổ phiếu</a></li>
+            <li class="list-menu-mb " style="list-style: none "></li><a >Lưu trữ</a></li>
+            <li class="list-menu-mb " style="list-style: none "></li><a >Bản tin HR</a></li>
+           </ul>
+       </div>
+      </label>
+      <img src="./img/vn.jfif">
+     </div>
+   </div>
+   <div class="head_content_bot">
+    <div class="head_content_search"> <input type="text" placeholder="Tìm theo mã chứng khoán hoặc tên doanh nghiệp"></div>
+   </div>
 </div>
 <div class="main-home">
   <div class="main-home-left">
@@ -351,6 +388,7 @@
        
         <div class="column_info">
           <div class="column_left">
+            <div class="thongso">
               <div class="" style="margin-left: 60px; font-size: 25px; font-weight: bold" >
                   <img src="./img/upnew.png" class="imgup">
                   <span class="price_real" style ="color: rgb(19, 235, 12);">134.4</span>
@@ -360,6 +398,7 @@
                <img id="img_ud_price" class="img_ud_price">
                <span id="changePricePercentage" class="percent" style="color: rgb(13, 175, 74);">(+1.32%)</span>
              </div>
+            </div>
              <div class="info_detail_size">
                <span class="info_detail_left ">Khối lượng</span>
                <span class="info_detail_right">5,093,600</span>
@@ -648,7 +687,9 @@ Tòa nhà FPT, số 10 phố Phạm Văn Bạch, phường Dịch Vọng, quận
           <div class="info_news-content">
              <div class="info_news_box">
                  <button class="info_news_box_left boxnews active" id="tintuc" onclick="OpenTab(even )">Tin tức</button>
-                 <button class="info_news_box_right boxnews" id="bantin" onclick="OpenTab(even)">Tin doanh nghiệp công bố</button>
+                 <button class="info_news_box_right boxnews" id="bantin" onclick="OpenTab(even)">Tin doanh nghiệp công bố
+                  
+                 </button>
              </div>
           </div>
           <div class="show_news" >
