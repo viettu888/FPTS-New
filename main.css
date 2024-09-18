@@ -25,20 +25,20 @@
 }
 @media screen and (max-width: 1360px)
 {
-    .clr
-{
- 
-    transform: translateX(30px);
-}
+  
+    .clr 
+    {
 
-
+        transform: translateX(30px);
+    }
+    
 }
 @media screen and (max-width: 768px) {
-
-    .box-info {
-        transform: translateX(-80px);
-       
-    }
+    
+    .swiper-pagination .swiper-pagination-bullet {
+        opacity: 1;
+        background-color: white;
+      }
     .column {
         margin: 0px -55px;
     }
@@ -76,6 +76,10 @@
     .contact-info span 
     {
     font-size: 9px;
+    }
+    .box-info
+    {
+        transform: translate(-70px, 0px);
     }
 }
 .content-z
